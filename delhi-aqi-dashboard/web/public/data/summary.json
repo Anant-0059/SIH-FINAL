@@ -1,0 +1,65 @@
+{
+  "app_title": "Delhi NCR Air Quality Intelligence Dashboard",
+  "station_name": "IHBAS, Dilshad Garden, Delhi - CPCB",
+  "station_id": "site_114",
+  "city": "Delhi",
+  "current": {
+    "timestamp": "2025-12-31T23:00:00",
+    "aqi": 356,
+    "category": "Very Poor",
+    "color": "#dc2626",
+    "dominant_pollutant": "PM2.5",
+    "description": "Respiratory illness on prolonged exposure",
+    "pm25": 191.8,
+    "pm10": 332.5,
+    "no2": 32.4,
+    "so2": 18.2,
+    "co": 1.1,
+    "o3": 24.5,
+    "nh3": 56.9,
+    "active_stations": 34
+  },
+  "historical_overview": {
+    "total_days_monitored": 731,
+    "date_range": "2024-01-01 to 2025-12-31",
+    "mean_aqi": 167.9,
+    "median_aqi": 140.5,
+    "min_aqi": 46,
+    "max_aqi": 500,
+    "good_days": 7,
+    "satisfactory_days": 196,
+    "moderate_days": 316,
+    "poor_days": 96,
+    "very_poor_days": 97,
+    "severe_days": 12
+  },
+  "forecast_milestones": {
+    "24h": {
+      "horizon": "24 Hours",
+      "timestamp": "2026-01-01T23:00:00",
+      "aqi": 338,
+      "category": "Very Poor",
+      "dominant_pollutant": "PM2.5",
+      "aqi_lower": 303,
+      "aqi_upper": 373
+    },
+    "48h": {
+      "horizon": "48 Hours",
+      "timestamp": "2026-01-02T23:00:00",
+      "aqi": 338,
+      "category": "Very Poor",
+      "dominant_pollutant": "PM2.5",
+      "aqi_lower": 288,
+      "aqi_upper": 388
+    },
+    "72h": {
+      "horizon": "72 Hours",
+      "timestamp": "2026-01-03T23:00:00",
+      "aqi": 338,
+      "category": "Very Poor",
+      "dominant_pollutant": "PM2.5",
+      "aqi_lower": 277,
+      "aqi_upper": 399
+    }
+  }
+}

@@ -1,0 +1,1423 @@
+{
+  "generated_at": "2026-09-22T12:24:58.259385",
+  "anchor_timestamp": "2025-12-31T23:00:00",
+  "disclaimer": "Model prediction \u2014 not an official CPCB forecast.",
+  "milestones": {
+    "24h": {
+      "horizon": "24 Hours",
+      "timestamp": "2026-01-01T23:00:00",
+      "aqi": 338,
+      "category": "Very Poor",
+      "dominant_pollutant": "PM2.5",
+      "aqi_lower": 303,
+      "aqi_upper": 373
+    },
+    "48h": {
+      "horizon": "48 Hours",
+      "timestamp": "2026-01-02T23:00:00",
+      "aqi": 338,
+      "category": "Very Poor",
+      "dominant_pollutant": "PM2.5",
+      "aqi_lower": 288,
+      "aqi_upper": 388
+    },
+    "72h": {
+      "horizon": "72 Hours",
+      "timestamp": "2026-01-03T23:00:00",
+      "aqi": 338,
+      "category": "Very Poor",
+      "dominant_pollutant": "PM2.5",
+      "aqi_lower": 277,
+      "aqi_upper": 399
+    }
+  },
+  "series": [
+    {
+      "timestamp": "2025-12-31T23:00:00",
+      "horizon_hours": 0,
+      "is_anchor": true,
+      "aqi": 356,
+      "aqi_lower": 356,
+      "aqi_upper": 356,
+      "category": "Very Poor",
+      "dominant_pollutant": "PM2.5",
+      "pollutants": {
+        "pm25": 191.8,
+        "pm10": 332.5,
+        "no2": 71.7,
+        "so2": 22.2,
+        "co": 1.5,
+        "o3": 10.0,
+        "nh3": 73.3
+      }
+    },
+    {
+      "timestamp": "2026-01-01T00:00:00",
+      "horizon_hours": 1,
+      "is_anchor": false,
+      "aqi": 348,
+      "aqi_lower": 341,
+      "aqi_upper": 355,
+      "category": "Very Poor",
+      "dominant_pollutant": "PM2.5",
+      "pollutants": {
+        "pm25": 181.7,
+        "pm10": 335.6,
+        "no2": 33.1,
+        "so2": 21.8,
+        "co": 1.4,
+        "o3": 9.9,
+        "nh3": 72.0
+      }
+    },
+    {
+      "timestamp": "2026-01-01T01:00:00",
+      "horizon_hours": 2,
+      "is_anchor": false,
+      "aqi": 345,
+      "aqi_lower": 335,
+      "aqi_upper": 355,
+      "category": "Very Poor",
+      "dominant_pollutant": "PM2.5",
+      "pollutants": {
+        "pm25": 177.9,
+        "pm10": 315.4,
+        "no2": 47.2,
+        "so2": 22.3,
+        "co": 1.4,
+        "o3": 10.2,
+        "nh3": 68.1
+      }
+    },
+    {
+      "timestamp": "2026-01-01T02:00:00",
+      "horizon_hours": 3,
+      "is_anchor": false,
+      "aqi": 343,
+      "aqi_lower": 330,
+      "aqi_upper": 356,
+      "category": "Very Poor",
+      "dominant_pollutant": "PM2.5",
+      "pollutants": {
+        "pm25": 175.0,
+        "pm10": 293.9,
+        "no2": 53.3,
+        "so2": 23.2,
+        "co": 1.3,
+        "o3": 10.2,
+        "nh3": 65.4
+      }
+    },
+    {
+      "timestamp": "2026-01-01T03:00:00",
+      "horizon_hours": 4,
+      "is_anchor": false,
+      "aqi": 335,
+      "aqi_lower": 321,
+      "aqi_upper": 349,
+      "category": "Very Poor",
+      "dominant_pollutant": "PM2.5",
+      "pollutants": {
+        "pm25": 165.1,
+        "pm10": 273.2,
+        "no2": 51.5,
+        "so2": 23.3,
+        "co": 1.2,
+        "o3": 10.2,
+        "nh3": 63.4
+      }
+    },
+    {
+      "timestamp": "2026-01-01T04:00:00",
+      "horizon_hours": 5,
+      "is_anchor": false,
+      "aqi": 333,
+      "aqi_lower": 317,
+      "aqi_upper": 349,
+      "category": "Very Poor",
+      "dominant_pollutant": "PM2.5",
+      "pollutants": {
+        "pm25": 162.5,
+        "pm10": 255.3,
+        "no2": 52.6,
+        "so2": 23.0,
+        "co": 1.2,
+        "o3": 10.2,
+        "nh3": 62.5
+      }
+    },
+    {
+      "timestamp": "2026-01-01T05:00:00",
+      "horizon_hours": 6,
+      "is_anchor": false,
+      "aqi": 330,
+      "aqi_lower": 312,
+      "aqi_upper": 348,
+      "category": "Very Poor",
+      "dominant_pollutant": "PM2.5",
+      "pollutants": {
+        "pm25": 158.0,
+        "pm10": 242.8,
+        "no2": 54.8,
+        "so2": 23.2,
+        "co": 1.2,
+        "o3": 10.5,
+        "nh3": 61.8
+      }
+    },
+    {
+      "timestamp": "2026-01-01T06:00:00",
+      "horizon_hours": 7,
+      "is_anchor": false,
+      "aqi": 329,
+      "aqi_lower": 310,
+      "aqi_upper": 348,
+      "category": "Very Poor",
+      "dominant_pollutant": "PM2.5",
+      "pollutants": {
+        "pm25": 156.8,
+        "pm10": 227.5,
+        "no2": 54.8,
+        "so2": 23.2,
+        "co": 1.2,
+        "o3": 10.4,
+        "nh3": 62.6
+      }
+    },
+    {
+      "timestamp": "2026-01-01T07:00:00",
+      "horizon_hours": 8,
+      "is_anchor": false,
+      "aqi": 331,
+      "aqi_lower": 311,
+      "aqi_upper": 351,
+      "category": "Very Poor",
+      "dominant_pollutant": "PM2.5",
+      "pollutants": {
+        "pm25": 158.9,
+        "pm10": 221.9,
+        "no2": 55.2,
+        "so2": 23.2,
+        "co": 1.2,
+        "o3": 10.7,
+        "nh3": 63.2
+      }
+    },
+    {
+      "timestamp": "2026-01-01T08:00:00",
+      "horizon_hours": 9,
+      "is_anchor": false,
+      "aqi": 332,
+      "aqi_lower": 310,
+      "aqi_upper": 354,
+      "category": "Very Poor",
+      "dominant_pollutant": "PM2.5",
+      "pollutants": {
+        "pm25": 160.1,
+        "pm10": 216.8,
+        "no2": 55.0,
+        "so2": 22.8,
+        "co": 1.2,
+        "o3": 11.3,
+        "nh3": 64.3
+      }
+    },
+    {
+      "timestamp": "2026-01-01T09:00:00",
+      "horizon_hours": 10,
+      "is_anchor": false,
+      "aqi": 338,
+      "aqi_lower": 315,
+      "aqi_upper": 361,
+      "category": "Very Poor",
+      "dominant_pollutant": "PM2.5",
+      "pollutants": {
+        "pm25": 169.1,
+        "pm10": 228.1,
+        "no2": 54.6,
+        "so2": 22.8,
+        "co": 1.2,
+        "o3": 12.0,
+        "nh3": 66.0
+      }
+    },
+    {
+      "timestamp": "2026-01-01T10:00:00",
+      "horizon_hours": 11,
+      "is_anchor": false,
+      "aqi": 335,
+      "aqi_lower": 311,
+      "aqi_upper": 359,
+      "category": "Very Poor",
+      "dominant_pollutant": "PM2.5",
+      "pollutants": {
+        "pm25": 164.2,
+        "pm10": 234.6,
+        "no2": 54.6,
+        "so2": 22.8,
+        "co": 1.1,
+        "o3": 12.9,
+        "nh3": 63.1
+      }
+    },
+    {
+      "timestamp": "2026-01-01T11:00:00",
+      "horizon_hours": 12,
+      "is_anchor": false,
+      "aqi": 334,
+      "aqi_lower": 309,
+      "aqi_upper": 359,
+      "category": "Very Poor",
+      "dominant_pollutant": "PM2.5",
+      "pollutants": {
+        "pm25": 163.4,
+        "pm10": 244.2,
+        "no2": 53.4,
+        "so2": 22.8,
+        "co": 1.1,
+        "o3": 13.8,
+        "nh3": 63.8
+      }
+    },
+    {
+      "timestamp": "2026-01-01T12:00:00",
+      "horizon_hours": 13,
+      "is_anchor": false,
+      "aqi": 334,
+      "aqi_lower": 308,
+      "aqi_upper": 360,
+      "category": "Very Poor",
+      "dominant_pollutant": "PM2.5",
+      "pollutants": {
+        "pm25": 163.1,
+        "pm10": 254.2,
+        "no2": 51.4,
+        "so2": 22.8,
+        "co": 1.1,
+        "o3": 14.5,
+        "nh3": 65.3
+      }
+    },
+    {
+      "timestamp": "2026-01-01T13:00:00",
+      "horizon_hours": 14,
+      "is_anchor": false,
+      "aqi": 334,
+      "aqi_lower": 307,
+      "aqi_upper": 361,
+      "category": "Very Poor",
+      "dominant_pollutant": "PM2.5",
+      "pollutants": {
+        "pm25": 163.1,
+        "pm10": 261.9,
+        "no2": 49.7,
+        "so2": 22.8,
+        "co": 1.1,
+        "o3": 14.6,
+        "nh3": 65.3
+      }
+    },
+    {
+      "timestamp": "2026-01-01T14:00:00",
+      "horizon_hours": 15,
+      "is_anchor": false,
+      "aqi": 334,
+      "aqi_lower": 306,
+      "aqi_upper": 362,
+      "category": "Very Poor",
+      "dominant_pollutant": "PM2.5",
+      "pollutants": {
+        "pm25": 163.1,
+        "pm10": 260.0,
+        "no2": 47.2,
+        "so2": 22.6,
+        "co": 1.2,
+        "o3": 14.6,
+        "nh3": 65.3
+      }
+    },
+    {
+      "timestamp": "2026-01-01T15:00:00",
+      "horizon_hours": 16,
+      "is_anchor": false,
+      "aqi": 333,
+      "aqi_lower": 304,
+      "aqi_upper": 362,
+      "category": "Very Poor",
+      "dominant_pollutant": "PM2.5",
+      "pollutants": {
+        "pm25": 161.6,
+        "pm10": 257.0,
+        "no2": 49.8,
+        "so2": 22.8,
+        "co": 1.2,
+        "o3": 14.0,
+        "nh3": 66.0
+      }
+    },
+    {
+      "timestamp": "2026-01-01T16:00:00",
+      "horizon_hours": 17,
+      "is_anchor": false,
+      "aqi": 333,
+      "aqi_lower": 303,
+      "aqi_upper": 363,
+      "category": "Very Poor",
+      "dominant_pollutant": "PM2.5",
+      "pollutants": {
+        "pm25": 162.5,
+        "pm10": 251.4,
+        "no2": 47.1,
+        "so2": 22.9,
+        "co": 1.2,
+        "o3": 13.8,
+        "nh3": 65.9
+      }
+    },
+    {
+      "timestamp": "2026-01-01T17:00:00",
+      "horizon_hours": 18,
+      "is_anchor": false,
+      "aqi": 333,
+      "aqi_lower": 302,
+      "aqi_upper": 364,
+      "category": "Very Poor",
+      "dominant_pollutant": "PM2.5",
+      "pollutants": {
+        "pm25": 162.5,
+        "pm10": 250.5,
+        "no2": 49.9,
+        "so2": 23.2,
+        "co": 1.2,
+        "o3": 13.7,
+        "nh3": 65.6
+      }
+    },
+    {
+      "timestamp": "2026-01-01T18:00:00",
+      "horizon_hours": 19,
+      "is_anchor": false,
+      "aqi": 335,
+      "aqi_lower": 304,
+      "aqi_upper": 366,
+      "category": "Very Poor",
+      "dominant_pollutant": "PM2.5",
+      "pollutants": {
+        "pm25": 164.8,
+        "pm10": 247.4,
+        "no2": 50.0,
+        "so2": 23.1,
+        "co": 1.4,
+        "o3": 13.1,
+        "nh3": 65.2
+      }
+    },
+    {
+      "timestamp": "2026-01-01T19:00:00",
+      "horizon_hours": 20,
+      "is_anchor": false,
+      "aqi": 335,
+      "aqi_lower": 303,
+      "aqi_upper": 367,
+      "category": "Very Poor",
+      "dominant_pollutant": "PM2.5",
+      "pollutants": {
+        "pm25": 164.8,
+        "pm10": 246.2,
+        "no2": 49.7,
+        "so2": 23.1,
+        "co": 1.4,
+        "o3": 12.5,
+        "nh3": 64.3
+      }
+    },
+    {
+      "timestamp": "2026-01-01T20:00:00",
+      "horizon_hours": 21,
+      "is_anchor": false,
+      "aqi": 337,
+      "aqi_lower": 304,
+      "aqi_upper": 370,
+      "category": "Very Poor",
+      "dominant_pollutant": "PM2.5",
+      "pollutants": {
+        "pm25": 166.9,
+        "pm10": 251.9,
+        "no2": 46.8,
+        "so2": 23.0,
+        "co": 1.5,
+        "o3": 12.2,
+        "nh3": 64.3
+      }
+    },
+    {
+      "timestamp": "2026-01-01T21:00:00",
+      "horizon_hours": 22,
+      "is_anchor": false,
+      "aqi": 338,
+      "aqi_lower": 304,
+      "aqi_upper": 372,
+      "category": "Very Poor",
+      "dominant_pollutant": "PM2.5",
+      "pollutants": {
+        "pm25": 168.8,
+        "pm10": 263.7,
+        "no2": 49.4,
+        "so2": 24.0,
+        "co": 1.4,
+        "o3": 11.6,
+        "nh3": 64.3
+      }
+    },
+    {
+      "timestamp": "2026-01-01T22:00:00",
+      "horizon_hours": 23,
+      "is_anchor": false,
+      "aqi": 338,
+      "aqi_lower": 303,
+      "aqi_upper": 373,
+      "category": "Very Poor",
+      "dominant_pollutant": "PM2.5",
+      "pollutants": {
+        "pm25": 169.2,
+        "pm10": 274.3,
+        "no2": 44.1,
+        "so2": 24.4,
+        "co": 1.4,
+        "o3": 11.5,
+        "nh3": 64.8
+      }
+    },
+    {
+      "timestamp": "2026-01-01T23:00:00",
+      "horizon_hours": 24,
+      "is_anchor": false,
+      "aqi": 338,
+      "aqi_lower": 303,
+      "aqi_upper": 373,
+      "category": "Very Poor",
+      "dominant_pollutant": "PM2.5",
+      "pollutants": {
+        "pm25": 168.8,
+        "pm10": 277.2,
+        "no2": 44.1,
+        "so2": 26.4,
+        "co": 1.3,
+        "o3": 11.5,
+        "nh3": 64.6
+      }
+    },
+    {
+      "timestamp": "2026-01-02T00:00:00",
+      "horizon_hours": 25,
+      "is_anchor": false,
+      "aqi": 335,
+      "aqi_lower": 299,
+      "aqi_upper": 371,
+      "category": "Very Poor",
+      "dominant_pollutant": "PM2.5",
+      "pollutants": {
+        "pm25": 164.2,
+        "pm10": 258.6,
+        "no2": 44.6,
+        "so2": 23.2,
+        "co": 1.3,
+        "o3": 10.9,
+        "nh3": 65.6
+      }
+    },
+    {
+      "timestamp": "2026-01-02T01:00:00",
+      "horizon_hours": 26,
+      "is_anchor": false,
+      "aqi": 333,
+      "aqi_lower": 296,
+      "aqi_upper": 370,
+      "category": "Very Poor",
+      "dominant_pollutant": "PM2.5",
+      "pollutants": {
+        "pm25": 162.0,
+        "pm10": 247.5,
+        "no2": 46.1,
+        "so2": 23.3,
+        "co": 1.2,
+        "o3": 10.8,
+        "nh3": 65.6
+      }
+    },
+    {
+      "timestamp": "2026-01-02T02:00:00",
+      "horizon_hours": 27,
+      "is_anchor": false,
+      "aqi": 334,
+      "aqi_lower": 296,
+      "aqi_upper": 372,
+      "category": "Very Poor",
+      "dominant_pollutant": "PM2.5",
+      "pollutants": {
+        "pm25": 163.6,
+        "pm10": 235.3,
+        "no2": 47.4,
+        "so2": 23.3,
+        "co": 1.2,
+        "o3": 10.6,
+        "nh3": 65.6
+      }
+    },
+    {
+      "timestamp": "2026-01-02T03:00:00",
+      "horizon_hours": 28,
+      "is_anchor": false,
+      "aqi": 334,
+      "aqi_lower": 296,
+      "aqi_upper": 372,
+      "category": "Very Poor",
+      "dominant_pollutant": "PM2.5",
+      "pollutants": {
+        "pm25": 163.6,
+        "pm10": 223.6,
+        "no2": 47.5,
+        "so2": 23.3,
+        "co": 1.2,
+        "o3": 10.4,
+        "nh3": 65.6
+      }
+    },
+    {
+      "timestamp": "2026-01-02T04:00:00",
+      "horizon_hours": 29,
+      "is_anchor": false,
+      "aqi": 332,
+      "aqi_lower": 293,
+      "aqi_upper": 371,
+      "category": "Very Poor",
+      "dominant_pollutant": "PM2.5",
+      "pollutants": {
+        "pm25": 161.1,
+        "pm10": 207.2,
+        "no2": 47.4,
+        "so2": 23.1,
+        "co": 1.2,
+        "o3": 10.2,
+        "nh3": 64.1
+      }
+    },
+    {
+      "timestamp": "2026-01-02T05:00:00",
+      "horizon_hours": 30,
+      "is_anchor": false,
+      "aqi": 332,
+      "aqi_lower": 292,
+      "aqi_upper": 372,
+      "category": "Very Poor",
+      "dominant_pollutant": "PM2.5",
+      "pollutants": {
+        "pm25": 161.1,
+        "pm10": 194.9,
+        "no2": 47.4,
+        "so2": 23.1,
+        "co": 1.2,
+        "o3": 10.5,
+        "nh3": 64.6
+      }
+    },
+    {
+      "timestamp": "2026-01-02T06:00:00",
+      "horizon_hours": 31,
+      "is_anchor": false,
+      "aqi": 331,
+      "aqi_lower": 291,
+      "aqi_upper": 371,
+      "category": "Very Poor",
+      "dominant_pollutant": "PM2.5",
+      "pollutants": {
+        "pm25": 159.0,
+        "pm10": 187.9,
+        "no2": 47.3,
+        "so2": 23.2,
+        "co": 1.2,
+        "o3": 10.5,
+        "nh3": 64.0
+      }
+    },
+    {
+      "timestamp": "2026-01-02T07:00:00",
+      "horizon_hours": 32,
+      "is_anchor": false,
+      "aqi": 332,
+      "aqi_lower": 291,
+      "aqi_upper": 373,
+      "category": "Very Poor",
+      "dominant_pollutant": "PM2.5",
+      "pollutants": {
+        "pm25": 161.0,
+        "pm10": 184.6,
+        "no2": 47.1,
+        "so2": 23.1,
+        "co": 1.2,
+        "o3": 10.7,
+        "nh3": 65.9
+      }
+    },
+    {
+      "timestamp": "2026-01-02T08:00:00",
+      "horizon_hours": 33,
+      "is_anchor": false,
+      "aqi": 334,
+      "aqi_lower": 293,
+      "aqi_upper": 375,
+      "category": "Very Poor",
+      "dominant_pollutant": "PM2.5",
+      "pollutants": {
+        "pm25": 162.8,
+        "pm10": 183.9,
+        "no2": 47.2,
+        "so2": 22.8,
+        "co": 1.2,
+        "o3": 11.5,
+        "nh3": 65.9
+      }
+    },
+    {
+      "timestamp": "2026-01-02T09:00:00",
+      "horizon_hours": 34,
+      "is_anchor": false,
+      "aqi": 337,
+      "aqi_lower": 295,
+      "aqi_upper": 379,
+      "category": "Very Poor",
+      "dominant_pollutant": "PM2.5",
+      "pollutants": {
+        "pm25": 167.8,
+        "pm10": 186.2,
+        "no2": 47.2,
+        "so2": 22.8,
+        "co": 1.2,
+        "o3": 12.4,
+        "nh3": 65.9
+      }
+    },
+    {
+      "timestamp": "2026-01-02T10:00:00",
+      "horizon_hours": 35,
+      "is_anchor": false,
+      "aqi": 339,
+      "aqi_lower": 296,
+      "aqi_upper": 382,
+      "category": "Very Poor",
+      "dominant_pollutant": "PM2.5",
+      "pollutants": {
+        "pm25": 169.8,
+        "pm10": 192.4,
+        "no2": 47.2,
+        "so2": 22.8,
+        "co": 1.2,
+        "o3": 13.8,
+        "nh3": 64.4
+      }
+    },
+    {
+      "timestamp": "2026-01-02T11:00:00",
+      "horizon_hours": 36,
+      "is_anchor": false,
+      "aqi": 339,
+      "aqi_lower": 296,
+      "aqi_upper": 382,
+      "category": "Very Poor",
+      "dominant_pollutant": "PM2.5",
+      "pollutants": {
+        "pm25": 169.8,
+        "pm10": 197.1,
+        "no2": 47.0,
+        "so2": 22.9,
+        "co": 1.2,
+        "o3": 15.0,
+        "nh3": 66.6
+      }
+    },
+    {
+      "timestamp": "2026-01-02T12:00:00",
+      "horizon_hours": 37,
+      "is_anchor": false,
+      "aqi": 339,
+      "aqi_lower": 295,
+      "aqi_upper": 383,
+      "category": "Very Poor",
+      "dominant_pollutant": "PM2.5",
+      "pollutants": {
+        "pm25": 169.5,
+        "pm10": 204.3,
+        "no2": 47.0,
+        "so2": 22.8,
+        "co": 1.1,
+        "o3": 15.7,
+        "nh3": 64.4
+      }
+    },
+    {
+      "timestamp": "2026-01-02T13:00:00",
+      "horizon_hours": 38,
+      "is_anchor": false,
+      "aqi": 339,
+      "aqi_lower": 294,
+      "aqi_upper": 384,
+      "category": "Very Poor",
+      "dominant_pollutant": "PM2.5",
+      "pollutants": {
+        "pm25": 169.5,
+        "pm10": 207.1,
+        "no2": 47.0,
+        "so2": 22.8,
+        "co": 1.1,
+        "o3": 15.9,
+        "nh3": 66.6
+      }
+    },
+    {
+      "timestamp": "2026-01-02T14:00:00",
+      "horizon_hours": 39,
+      "is_anchor": false,
+      "aqi": 339,
+      "aqi_lower": 294,
+      "aqi_upper": 384,
+      "category": "Very Poor",
+      "dominant_pollutant": "PM2.5",
+      "pollutants": {
+        "pm25": 169.5,
+        "pm10": 207.3,
+        "no2": 47.2,
+        "so2": 22.6,
+        "co": 1.1,
+        "o3": 16.7,
+        "nh3": 64.4
+      }
+    },
+    {
+      "timestamp": "2026-01-02T15:00:00",
+      "horizon_hours": 40,
+      "is_anchor": false,
+      "aqi": 336,
+      "aqi_lower": 290,
+      "aqi_upper": 382,
+      "category": "Very Poor",
+      "dominant_pollutant": "PM2.5",
+      "pollutants": {
+        "pm25": 165.9,
+        "pm10": 203.1,
+        "no2": 47.3,
+        "so2": 22.8,
+        "co": 1.1,
+        "o3": 15.8,
+        "nh3": 65.9
+      }
+    },
+    {
+      "timestamp": "2026-01-02T16:00:00",
+      "horizon_hours": 41,
+      "is_anchor": false,
+      "aqi": 335,
+      "aqi_lower": 289,
+      "aqi_upper": 381,
+      "category": "Very Poor",
+      "dominant_pollutant": "PM2.5",
+      "pollutants": {
+        "pm25": 165.2,
+        "pm10": 200.6,
+        "no2": 47.4,
+        "so2": 22.8,
+        "co": 1.1,
+        "o3": 15.5,
+        "nh3": 65.9
+      }
+    },
+    {
+      "timestamp": "2026-01-02T17:00:00",
+      "horizon_hours": 42,
+      "is_anchor": false,
+      "aqi": 335,
+      "aqi_lower": 288,
+      "aqi_upper": 382,
+      "category": "Very Poor",
+      "dominant_pollutant": "PM2.5",
+      "pollutants": {
+        "pm25": 165.2,
+        "pm10": 203.3,
+        "no2": 47.4,
+        "so2": 23.1,
+        "co": 1.1,
+        "o3": 15.1,
+        "nh3": 65.2
+      }
+    },
+    {
+      "timestamp": "2026-01-02T18:00:00",
+      "horizon_hours": 43,
+      "is_anchor": false,
+      "aqi": 337,
+      "aqi_lower": 290,
+      "aqi_upper": 384,
+      "category": "Very Poor",
+      "dominant_pollutant": "PM2.5",
+      "pollutants": {
+        "pm25": 166.9,
+        "pm10": 206.2,
+        "no2": 48.0,
+        "so2": 23.0,
+        "co": 1.3,
+        "o3": 14.2,
+        "nh3": 64.8
+      }
+    },
+    {
+      "timestamp": "2026-01-02T19:00:00",
+      "horizon_hours": 44,
+      "is_anchor": false,
+      "aqi": 338,
+      "aqi_lower": 290,
+      "aqi_upper": 386,
+      "category": "Very Poor",
+      "dominant_pollutant": "PM2.5",
+      "pollutants": {
+        "pm25": 168.4,
+        "pm10": 207.2,
+        "no2": 48.1,
+        "so2": 23.0,
+        "co": 1.3,
+        "o3": 13.8,
+        "nh3": 64.6
+      }
+    },
+    {
+      "timestamp": "2026-01-02T20:00:00",
+      "horizon_hours": 45,
+      "is_anchor": false,
+      "aqi": 338,
+      "aqi_lower": 290,
+      "aqi_upper": 386,
+      "category": "Very Poor",
+      "dominant_pollutant": "PM2.5",
+      "pollutants": {
+        "pm25": 168.4,
+        "pm10": 254.7,
+        "no2": 48.1,
+        "so2": 23.0,
+        "co": 1.3,
+        "o3": 13.6,
+        "nh3": 64.6
+      }
+    },
+    {
+      "timestamp": "2026-01-02T21:00:00",
+      "horizon_hours": 46,
+      "is_anchor": false,
+      "aqi": 338,
+      "aqi_lower": 289,
+      "aqi_upper": 387,
+      "category": "Very Poor",
+      "dominant_pollutant": "PM2.5",
+      "pollutants": {
+        "pm25": 168.4,
+        "pm10": 263.6,
+        "no2": 47.6,
+        "so2": 24.0,
+        "co": 1.3,
+        "o3": 13.5,
+        "nh3": 64.6
+      }
+    },
+    {
+      "timestamp": "2026-01-02T22:00:00",
+      "horizon_hours": 47,
+      "is_anchor": false,
+      "aqi": 338,
+      "aqi_lower": 288,
+      "aqi_upper": 388,
+      "category": "Very Poor",
+      "dominant_pollutant": "PM2.5",
+      "pollutants": {
+        "pm25": 168.8,
+        "pm10": 274.2,
+        "no2": 46.5,
+        "so2": 24.5,
+        "co": 1.3,
+        "o3": 13.2,
+        "nh3": 64.6
+      }
+    },
+    {
+      "timestamp": "2026-01-02T23:00:00",
+      "horizon_hours": 48,
+      "is_anchor": false,
+      "aqi": 338,
+      "aqi_lower": 288,
+      "aqi_upper": 388,
+      "category": "Very Poor",
+      "dominant_pollutant": "PM2.5",
+      "pollutants": {
+        "pm25": 168.8,
+        "pm10": 275.1,
+        "no2": 46.5,
+        "so2": 26.5,
+        "co": 1.2,
+        "o3": 12.7,
+        "nh3": 64.5
+      }
+    },
+    {
+      "timestamp": "2026-01-03T00:00:00",
+      "horizon_hours": 49,
+      "is_anchor": false,
+      "aqi": 334,
+      "aqi_lower": 284,
+      "aqi_upper": 384,
+      "category": "Very Poor",
+      "dominant_pollutant": "PM2.5",
+      "pollutants": {
+        "pm25": 163.7,
+        "pm10": 258.0,
+        "no2": 47.1,
+        "so2": 23.5,
+        "co": 1.2,
+        "o3": 11.8,
+        "nh3": 65.6
+      }
+    },
+    {
+      "timestamp": "2026-01-03T01:00:00",
+      "horizon_hours": 50,
+      "is_anchor": false,
+      "aqi": 331,
+      "aqi_lower": 280,
+      "aqi_upper": 382,
+      "category": "Very Poor",
+      "dominant_pollutant": "PM2.5",
+      "pollutants": {
+        "pm25": 159.9,
+        "pm10": 318.5,
+        "no2": 47.4,
+        "so2": 23.7,
+        "co": 1.2,
+        "o3": 11.6,
+        "nh3": 65.6
+      }
+    },
+    {
+      "timestamp": "2026-01-03T02:00:00",
+      "horizon_hours": 51,
+      "is_anchor": false,
+      "aqi": 334,
+      "aqi_lower": 282,
+      "aqi_upper": 386,
+      "category": "Very Poor",
+      "dominant_pollutant": "PM2.5",
+      "pollutants": {
+        "pm25": 163.6,
+        "pm10": 297.7,
+        "no2": 47.4,
+        "so2": 23.7,
+        "co": 1.1,
+        "o3": 11.6,
+        "nh3": 65.6
+      }
+    },
+    {
+      "timestamp": "2026-01-03T03:00:00",
+      "horizon_hours": 52,
+      "is_anchor": false,
+      "aqi": 334,
+      "aqi_lower": 282,
+      "aqi_upper": 386,
+      "category": "Very Poor",
+      "dominant_pollutant": "PM2.5",
+      "pollutants": {
+        "pm25": 163.6,
+        "pm10": 277.0,
+        "no2": 47.4,
+        "so2": 23.7,
+        "co": 1.1,
+        "o3": 11.5,
+        "nh3": 65.6
+      }
+    },
+    {
+      "timestamp": "2026-01-03T04:00:00",
+      "horizon_hours": 53,
+      "is_anchor": false,
+      "aqi": 333,
+      "aqi_lower": 280,
+      "aqi_upper": 386,
+      "category": "Very Poor",
+      "dominant_pollutant": "PM2.5",
+      "pollutants": {
+        "pm25": 162.0,
+        "pm10": 257.6,
+        "no2": 47.3,
+        "so2": 23.4,
+        "co": 1.1,
+        "o3": 11.5,
+        "nh3": 65.6
+      }
+    },
+    {
+      "timestamp": "2026-01-03T05:00:00",
+      "horizon_hours": 54,
+      "is_anchor": false,
+      "aqi": 332,
+      "aqi_lower": 279,
+      "aqi_upper": 385,
+      "category": "Very Poor",
+      "dominant_pollutant": "PM2.5",
+      "pollutants": {
+        "pm25": 161.1,
+        "pm10": 243.6,
+        "no2": 47.3,
+        "so2": 23.5,
+        "co": 1.1,
+        "o3": 11.5,
+        "nh3": 65.6
+      }
+    },
+    {
+      "timestamp": "2026-01-03T06:00:00",
+      "horizon_hours": 55,
+      "is_anchor": false,
+      "aqi": 331,
+      "aqi_lower": 278,
+      "aqi_upper": 384,
+      "category": "Very Poor",
+      "dominant_pollutant": "PM2.5",
+      "pollutants": {
+        "pm25": 159.0,
+        "pm10": 229.4,
+        "no2": 47.3,
+        "so2": 23.5,
+        "co": 1.1,
+        "o3": 11.4,
+        "nh3": 65.0
+      }
+    },
+    {
+      "timestamp": "2026-01-03T07:00:00",
+      "horizon_hours": 56,
+      "is_anchor": false,
+      "aqi": 332,
+      "aqi_lower": 278,
+      "aqi_upper": 386,
+      "category": "Very Poor",
+      "dominant_pollutant": "PM2.5",
+      "pollutants": {
+        "pm25": 161.0,
+        "pm10": 223.0,
+        "no2": 47.2,
+        "so2": 23.5,
+        "co": 1.1,
+        "o3": 11.6,
+        "nh3": 65.9
+      }
+    },
+    {
+      "timestamp": "2026-01-03T08:00:00",
+      "horizon_hours": 57,
+      "is_anchor": false,
+      "aqi": 335,
+      "aqi_lower": 280,
+      "aqi_upper": 390,
+      "category": "Very Poor",
+      "dominant_pollutant": "PM2.5",
+      "pollutants": {
+        "pm25": 164.9,
+        "pm10": 233.6,
+        "no2": 47.1,
+        "so2": 23.1,
+        "co": 1.1,
+        "o3": 12.3,
+        "nh3": 65.9
+      }
+    },
+    {
+      "timestamp": "2026-01-03T09:00:00",
+      "horizon_hours": 58,
+      "is_anchor": false,
+      "aqi": 337,
+      "aqi_lower": 282,
+      "aqi_upper": 392,
+      "category": "Very Poor",
+      "dominant_pollutant": "PM2.5",
+      "pollutants": {
+        "pm25": 167.8,
+        "pm10": 232.3,
+        "no2": 47.1,
+        "so2": 23.1,
+        "co": 1.1,
+        "o3": 16.9,
+        "nh3": 65.9
+      }
+    },
+    {
+      "timestamp": "2026-01-03T10:00:00",
+      "horizon_hours": 59,
+      "is_anchor": false,
+      "aqi": 339,
+      "aqi_lower": 284,
+      "aqi_upper": 394,
+      "category": "Very Poor",
+      "dominant_pollutant": "PM2.5",
+      "pollutants": {
+        "pm25": 169.8,
+        "pm10": 235.1,
+        "no2": 47.1,
+        "so2": 23.1,
+        "co": 1.1,
+        "o3": 17.2,
+        "nh3": 64.4
+      }
+    },
+    {
+      "timestamp": "2026-01-03T11:00:00",
+      "horizon_hours": 60,
+      "is_anchor": false,
+      "aqi": 339,
+      "aqi_lower": 283,
+      "aqi_upper": 395,
+      "category": "Very Poor",
+      "dominant_pollutant": "PM2.5",
+      "pollutants": {
+        "pm25": 169.8,
+        "pm10": 240.9,
+        "no2": 47.0,
+        "so2": 23.2,
+        "co": 1.1,
+        "o3": 18.0,
+        "nh3": 66.6
+      }
+    },
+    {
+      "timestamp": "2026-01-03T12:00:00",
+      "horizon_hours": 61,
+      "is_anchor": false,
+      "aqi": 339,
+      "aqi_lower": 283,
+      "aqi_upper": 395,
+      "category": "Very Poor",
+      "dominant_pollutant": "PM2.5",
+      "pollutants": {
+        "pm25": 169.5,
+        "pm10": 244.8,
+        "no2": 47.0,
+        "so2": 23.1,
+        "co": 1.1,
+        "o3": 18.6,
+        "nh3": 64.4
+      }
+    },
+    {
+      "timestamp": "2026-01-03T13:00:00",
+      "horizon_hours": 62,
+      "is_anchor": false,
+      "aqi": 339,
+      "aqi_lower": 282,
+      "aqi_upper": 396,
+      "category": "Very Poor",
+      "dominant_pollutant": "PM2.5",
+      "pollutants": {
+        "pm25": 169.5,
+        "pm10": 253.5,
+        "no2": 47.0,
+        "so2": 23.1,
+        "co": 1.1,
+        "o3": 18.9,
+        "nh3": 66.6
+      }
+    },
+    {
+      "timestamp": "2026-01-03T14:00:00",
+      "horizon_hours": 63,
+      "is_anchor": false,
+      "aqi": 339,
+      "aqi_lower": 282,
+      "aqi_upper": 396,
+      "category": "Very Poor",
+      "dominant_pollutant": "PM2.5",
+      "pollutants": {
+        "pm25": 169.5,
+        "pm10": 260.1,
+        "no2": 47.2,
+        "so2": 22.9,
+        "co": 1.1,
+        "o3": 19.1,
+        "nh3": 64.4
+      }
+    },
+    {
+      "timestamp": "2026-01-03T15:00:00",
+      "horizon_hours": 64,
+      "is_anchor": false,
+      "aqi": 338,
+      "aqi_lower": 280,
+      "aqi_upper": 396,
+      "category": "Very Poor",
+      "dominant_pollutant": "PM2.5",
+      "pollutants": {
+        "pm25": 168.0,
+        "pm10": 257.0,
+        "no2": 47.3,
+        "so2": 23.1,
+        "co": 1.1,
+        "o3": 18.6,
+        "nh3": 65.9
+      }
+    },
+    {
+      "timestamp": "2026-01-03T16:00:00",
+      "horizon_hours": 65,
+      "is_anchor": false,
+      "aqi": 338,
+      "aqi_lower": 280,
+      "aqi_upper": 396,
+      "category": "Very Poor",
+      "dominant_pollutant": "PM2.5",
+      "pollutants": {
+        "pm25": 168.9,
+        "pm10": 252.1,
+        "no2": 47.4,
+        "so2": 23.1,
+        "co": 1.1,
+        "o3": 17.5,
+        "nh3": 65.9
+      }
+    },
+    {
+      "timestamp": "2026-01-03T17:00:00",
+      "horizon_hours": 66,
+      "is_anchor": false,
+      "aqi": 338,
+      "aqi_lower": 279,
+      "aqi_upper": 397,
+      "category": "Very Poor",
+      "dominant_pollutant": "PM2.5",
+      "pollutants": {
+        "pm25": 168.9,
+        "pm10": 250.5,
+        "no2": 47.4,
+        "so2": 23.4,
+        "co": 1.1,
+        "o3": 17.1,
+        "nh3": 65.2
+      }
+    },
+    {
+      "timestamp": "2026-01-03T18:00:00",
+      "horizon_hours": 67,
+      "is_anchor": false,
+      "aqi": 338,
+      "aqi_lower": 279,
+      "aqi_upper": 397,
+      "category": "Very Poor",
+      "dominant_pollutant": "PM2.5",
+      "pollutants": {
+        "pm25": 168.4,
+        "pm10": 247.4,
+        "no2": 47.6,
+        "so2": 23.3,
+        "co": 1.2,
+        "o3": 15.4,
+        "nh3": 64.8
+      }
+    },
+    {
+      "timestamp": "2026-01-03T19:00:00",
+      "horizon_hours": 68,
+      "is_anchor": false,
+      "aqi": 338,
+      "aqi_lower": 278,
+      "aqi_upper": 398,
+      "category": "Very Poor",
+      "dominant_pollutant": "PM2.5",
+      "pollutants": {
+        "pm25": 168.4,
+        "pm10": 246.2,
+        "no2": 48.1,
+        "so2": 23.3,
+        "co": 1.2,
+        "o3": 14.5,
+        "nh3": 64.6
+      }
+    },
+    {
+      "timestamp": "2026-01-03T20:00:00",
+      "horizon_hours": 69,
+      "is_anchor": false,
+      "aqi": 338,
+      "aqi_lower": 278,
+      "aqi_upper": 398,
+      "category": "Very Poor",
+      "dominant_pollutant": "PM2.5",
+      "pollutants": {
+        "pm25": 168.4,
+        "pm10": 252.0,
+        "no2": 48.1,
+        "so2": 23.3,
+        "co": 1.3,
+        "o3": 14.1,
+        "nh3": 64.6
+      }
+    },
+    {
+      "timestamp": "2026-01-03T21:00:00",
+      "horizon_hours": 70,
+      "is_anchor": false,
+      "aqi": 338,
+      "aqi_lower": 278,
+      "aqi_upper": 398,
+      "category": "Very Poor",
+      "dominant_pollutant": "PM2.5",
+      "pollutants": {
+        "pm25": 168.4,
+        "pm10": 261.8,
+        "no2": 47.6,
+        "so2": 24.3,
+        "co": 1.3,
+        "o3": 13.6,
+        "nh3": 64.6
+      }
+    },
+    {
+      "timestamp": "2026-01-03T22:00:00",
+      "horizon_hours": 71,
+      "is_anchor": false,
+      "aqi": 338,
+      "aqi_lower": 277,
+      "aqi_upper": 399,
+      "category": "Very Poor",
+      "dominant_pollutant": "PM2.5",
+      "pollutants": {
+        "pm25": 168.8,
+        "pm10": 264.3,
+        "no2": 46.6,
+        "so2": 27.2,
+        "co": 1.2,
+        "o3": 13.6,
+        "nh3": 64.6
+      }
+    },
+    {
+      "timestamp": "2026-01-03T23:00:00",
+      "horizon_hours": 72,
+      "is_anchor": false,
+      "aqi": 338,
+      "aqi_lower": 277,
+      "aqi_upper": 399,
+      "category": "Very Poor",
+      "dominant_pollutant": "PM2.5",
+      "pollutants": {
+        "pm25": 168.8,
+        "pm10": 272.4,
+        "no2": 46.7,
+        "so2": 27.4,
+        "co": 1.2,
+        "o3": 13.6,
+        "nh3": 64.5
+      }
+    }
+  ]
+}

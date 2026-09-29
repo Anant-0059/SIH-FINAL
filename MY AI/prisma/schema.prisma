@@ -1,0 +1,411 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum UserStatus {
+  PENDING
+  ACTIVE
+  DISABLED
+  SUSPENDED
+}
+
+enum RoleType {
+  USER
+  ADMIN
+}
+
+enum ProviderBillingTier {
+  LOCAL
+  FREE_TIER
+  BYOK
+  PAID_AUTHORIZED
+}
+
+enum HealthStatus {
+  AVAILABLE
+  LOCAL
+  QUOTA_REACHED
+  BILLING_REQUIRED
+  UNAVAILABLE
+  CIRCUIT_OPEN
+}
+
+enum PrivacyLevel {
+  PUBLIC
+  NORMAL
+  SENSITIVE
+  HIGHLY_SENSITIVE
+}
+
+model User {
+  id                     String        @id @default(cuid())
+  email                  String        @unique
+  name                   String
+  avatarUrl              String?
+  googleSub              String?       @unique
+  status                 UserStatus    @default(ACTIVE)
+  roleId                 String
+  role                   Role          @relation(fields: [roleId], references: [id])
+  routingPolicy          String        @default("free-first") // local-first, free-first, privacy-first, quality-first, speed-first
+  allowPaidProviders     Boolean       @default(false)
+  localOnlyPrivacy       Boolean       @default(false)
+  autoFallbackEnabled    Boolean       @default(true)
+  imagePreference        String        @default("auto") // auto, always, never, ask
+  humanApprovalPolicy    String        @default("smart") // auto, smart, strict
+  createdAt              DateTime      @default(now())
+  updatedAt              DateTime      @updatedAt
+
+  projects               Project[]
+  conversations          Conversation[]
+  generationJobs         GenerationJob[]
+  auditLogs              AuditLog[]
+  shareLinks             ShareLink[]
+
+  @@index([email])
+  @@index([status])
+}
+
+model Role {
+  id          String     @id @default(cuid())
+  name        RoleType   @unique
+  permissions String[]
+  users       User[]
+}
+
+model Provider {
+  id                 String              @id
+  name               String
+  adapterType        String
+  baseUrl            String
+  billingTier        ProviderBillingTier @default(FREE_TIER)
+  isPaidProvider     Boolean             @default(false)
+  userAuthorizedPaid Boolean             @default(false)
+  enabled            Boolean             @default(true)
+  encryptedApiKey    String?
+  maskedApiKey       String?
+  priority           Int                 @default(50)
+  createdAt          DateTime            @default(now())
+  updatedAt          DateTime            @updatedAt
+
+  models             AIModel[]
+  health             ProviderHealth?
+  usageRecords       UsageRecord[]
+
+  @@index([enabled, priority])
+}
+
+model AIModel {
+  id               String   @id
+  providerId       String
+  provider         Provider @relation(fields: [providerId], references: [id], onDelete: Cascade)
+  name             String
+  modelIdentifier  String
+  supportsText     Boolean  @default(true)
+  supportsVision   Boolean  @default(false)
+  supportsAudio    Boolean  @default(false)
+  supportsFiles    Boolean  @default(false)
+  structuredOutput Boolean  @default(true)
+  reasoningScore   Int      @default(80)
+  codingScore      Int      @default(80)
+  researchScore    Int      @default(80)
+  contextWindow    Int      @default(128000)
+  isLocal          Boolean  @default(false)
+  storageSizeGb    Float?
+  ramRequiredGb    Float?
+  vramRequiredGb   Float?
+  enabled          Boolean  @default(true)
+
+  @@index([providerId, enabled])
+}
+
+model ProviderHealth {
+  id                  String       @id @default(cuid())
+  providerId          String       @unique
+  provider            Provider     @relation(fields: [providerId], references: [id], onDelete: Cascade)
+  status              HealthStatus @default(AVAILABLE)
+  latencyMs           Int          @default(0)
+  timeoutRate         Float        @default(0)
+  recentErrorCount    Int          @default(0)
+  lastErrorMessage    String?
+  circuitBreakerState String       @default("CLOSED") // CLOSED, HALF_OPEN, OPEN
+  quotaState          String?
+  lastCheckedAt       DateTime     @default(now())
+}
+
+model UsageRecord {
+  id                String   @id @default(cuid())
+  providerId        String
+  provider          Provider @relation(fields: [providerId], references: [id], onDelete: Cascade)
+  modelId           String
+  officialTokensIn  Int?
+  officialTokensOut Int?
+  officialQuotaInfo String?
+  recordedAt        DateTime @default(now())
+}
+
+model Project {
+  id          String   @id @default(cuid())
+  userId      String
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  name        String
+  description String
+  status      String   @default("ACTIVE")
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  memories          ProjectMemory[]
+  conversations     Conversation[]
+  artifacts         DocumentArtifact[]
+  researchProjects  ResearchProject[]
+  generationJobs    GenerationJob[]
+  workflows         Workflow[]
+  attachments       Attachment[]
+
+  @@index([userId])
+}
+
+model ProjectMemory {
+  id        String   @id @default(cuid())
+  projectId String
+  project   Project  @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  category  String   // objective, decision, instruction, fact, source
+  title     String
+  content   String
+  pinned    Boolean  @default(true)
+  createdAt DateTime @default(now())
+
+  @@index([projectId, category])
+}
+
+model Conversation {
+  id        String    @id @default(cuid())
+  projectId String
+  project   Project   @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  userId    String
+  user      User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  title     String
+  createdAt DateTime  @default(now())
+  messages  Message[]
+}
+
+model Message {
+  id             String       @id @default(cuid())
+  conversationId String
+  conversation   Conversation @relation(fields: [conversationId], references: [id], onDelete: Cascade)
+  role           String       // system, user, assistant, council
+  content        String
+  providerId     String?
+  modelId        String?
+  routingReason  String?
+  createdAt      DateTime     @default(now())
+}
+
+model Attachment {
+  id          String   @id @default(cuid())
+  projectId   String
+  project     Project  @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  fileName    String
+  mimeType    String
+  sizeBytes   Int
+  storagePath String
+  extractedText String?
+  isSafe      Boolean  @default(true)
+  createdAt   DateTime @default(now())
+}
+
+model DocumentArtifact {
+  id               String   @id @default(cuid())
+  projectId        String
+  project          Project  @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  title            String
+  format           String   // DOCX, PDF, PPTX, XLSX, CSV, MD, TXT, SVG
+  content          String
+  templateId       String?
+  currentVersion   Int      @default(1)
+  qualityScore     Int      @default(95)
+  qualityReportJson String
+  lineageJson      String
+  sizeBytes        Int      @default(4096)
+  createdAt        DateTime @default(now())
+  updatedAt        DateTime @updatedAt
+
+  versions         ArtifactVersion[]
+  shareLinks       ShareLink[]
+
+  @@index([projectId, format])
+}
+
+model ArtifactVersion {
+  id          String           @id @default(cuid())
+  artifactId  String
+  artifact    DocumentArtifact @relation(fields: [artifactId], references: [id], onDelete: Cascade)
+  versionNum  Int
+  content     String
+  changeNote  String
+  providerId  String?
+  createdAt   DateTime         @default(now())
+
+  @@index([artifactId, versionNum])
+}
+
+model Template {
+  id             String   @id @default(cuid())
+  name           String
+  category       String   // Academic Report, Business Proposal, Corporate Presentation, ATS Resume
+  sourceFormat   String   // DOCX, PPTX, PDF, XLSX
+  schemaJson     String   // Extracted fonts, colors, margins, headers, visual hierarchy
+  createdAt      DateTime @default(now())
+}
+
+model ResearchProject {
+  id              String           @id @default(cuid())
+  projectId       String
+  project         Project          @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  query           String
+  citationStyle   String           @default("APA") // APA, MLA, Chicago, IEEE, Harvard
+  synthesisReport String
+  conflictsJson   String           // Detected conflicts between sources
+  createdAt       DateTime         @default(now())
+
+  sources         ResearchSource[]
+  imageSources    ImageSource[]
+}
+
+model ResearchSource {
+  id                String          @id @default(cuid())
+  researchProjectId String
+  researchProject   ResearchProject @relation(fields: [researchProjectId], references: [id], onDelete: Cascade)
+  url               String
+  title             String
+  author            String
+  publisher         String
+  publishedDate     String
+  retrievedDate     String
+  excerpt           String
+  reliabilityScore  Int             @default(90)
+}
+
+model ImageSource {
+  id                     String          @id @default(cuid())
+  researchProjectId      String?
+  researchProject        ResearchProject? @relation(fields: [researchProjectId], references: [id], onDelete: SetNull)
+  imageUrl               String
+  sourceUrl              String
+  sourceName             String          // Wikimedia Commons, Unsplash, Pexels, Pixabay, SVG Diagram
+  creator                String
+  license                String          // CC BY-SA 4.0, CC0, Unsplash License, Generated Diagram
+  licenseUrl             String
+  retrievedDate          String
+  attributionRequirement String
+  sectionPlacement       String
+  caption                String
+  verified               Boolean         @default(true)
+}
+
+model GenerationJob {
+  id                 String           @id @default(cuid())
+  projectId          String
+  project            Project          @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  userId             String
+  user               User             @relation(fields: [userId], references: [id], onDelete: Cascade)
+  title              String
+  taskType           String           // research, document, presentation, spreadsheet, coding, council, workflow
+  status             String           // RUNNING, CHECKPOINTED, COMPLETED, PAUSED_APPROVAL, FAILED
+  progressPercent    Int              @default(0)
+  activeProviderId   String
+  activeModelId      String
+  privacyLevel       PrivacyLevel     @default(NORMAL)
+  routingExplanation String
+  switchHistoryJson  String           // List of Provider A -> Quota -> Checkpoint -> Provider B transitions
+  decisionTraceJson  String           // Step-by-step execution trace
+  createdAt          DateTime         @default(now())
+  updatedAt          DateTime         @updatedAt
+
+  checkpoints        TaskCheckpoint[]
+
+  @@index([projectId, status])
+}
+
+model TaskCheckpoint {
+  id                      String        @id @default(cuid())
+  jobId                   String
+  job                     GenerationJob @relation(fields: [jobId], references: [id], onDelete: Cascade)
+  stepIndex               Int
+  stepName                String
+  progressPercent         Int
+  status                  String        // COMPLETED, FAILED, PENDING
+  providerUsed            String
+  continuationPackageJson String        // Compact state transferable across providers
+  createdAt               DateTime      @default(now())
+
+  @@index([jobId, stepIndex])
+}
+
+model Workflow {
+  id          String         @id @default(cuid())
+  projectId   String
+  project     Project        @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  name        String
+  description String
+  status      String         @default("READY")
+  createdAt   DateTime       @default(now())
+
+  nodes       WorkflowNode[]
+  agentRuns   AgentRun[]
+}
+
+model WorkflowNode {
+  id               String   @id @default(cuid())
+  workflowId       String
+  workflow         Workflow @relation(fields: [workflowId], references: [id], onDelete: Cascade)
+  stepOrder        Int
+  nodeType         String   // File, OCR, Extract, Research, ImageSearch, AI, Condition, HumanApproval, QualityCheck, Export
+  label            String
+  configJson       String
+  status           String   @default("PENDING") // COMPLETED, RUNNING, FAILED, WAITING_APPROVAL, PENDING
+  outputSummary    String?
+}
+
+model AgentRun {
+  id          String   @id @default(cuid())
+  workflowId  String?
+  workflow    Workflow? @relation(fields: [workflowId], references: [id], onDelete: SetNull)
+  agentRole   String   // Research Agent, Document Agent, PPT Agent, Coding Agent, Study Agent, Resume Agent, Review Agent
+  objective   String
+  status      String
+  permissions String[]
+  output      String
+  createdAt   DateTime @default(now())
+}
+
+model ShareLink {
+  id           String           @id @default(cuid())
+  artifactId   String
+  artifact     DocumentArtifact @relation(fields: [artifactId], references: [id], onDelete: Cascade)
+  userId       String
+  user         User             @relation(fields: [userId], references: [id], onDelete: Cascade)
+  token        String           @unique
+  passwordHash String?
+  allowDownload Boolean         @default(false)
+  revoked      Boolean          @default(false)
+  expiresAt    DateTime
+  createdAt    DateTime         @default(now())
+}
+
+model AuditLog {
+  id        String   @id @default(cuid())
+  userId    String?
+  user      User?    @relation(fields: [userId], references: [id], onDelete: SetNull)
+  action    String   // LOGIN, LOGOUT, USER_APPROVAL, PROVIDER_CHANGE, BYOK_ADD, BYOK_REVOKE, SHARE_CREATE, CLEANUP, PAID_BLOCKED
+  category  String   // SECURITY, ADMIN, PRIVACY, COST_GUARD, ROUTER
+  details   String
+  ipAddress String   @default("127.0.0.1")
+  createdAt DateTime @default(now())
+
+  @@index([category, createdAt])
+}

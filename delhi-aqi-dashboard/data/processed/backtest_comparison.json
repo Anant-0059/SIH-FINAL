@@ -1,0 +1,2357 @@
+{
+  "test_window_hours": 336,
+  "data": [
+    {
+      "timestamp": "2025-12-18T00:00:00",
+      "actual_aqi": 408,
+      "actual_category": "Severe",
+      "pm25": 258.6,
+      "pm10": 391.8
+    },
+    {
+      "timestamp": "2025-12-18T01:00:00",
+      "actual_aqi": 408,
+      "actual_category": "Severe",
+      "pm25": 258.9,
+      "pm10": 395.6
+    },
+    {
+      "timestamp": "2025-12-18T02:00:00",
+      "actual_aqi": 397,
+      "actual_category": "Very Poor",
+      "pm25": 245.7,
+      "pm10": 390.4
+    },
+    {
+      "timestamp": "2025-12-18T03:00:00",
+      "actual_aqi": 382,
+      "actual_category": "Very Poor",
+      "pm25": 225.9,
+      "pm10": 364.9
+    },
+    {
+      "timestamp": "2025-12-18T04:00:00",
+      "actual_aqi": 402,
+      "actual_category": "Severe",
+      "pm25": 251.1,
+      "pm10": 399.0
+    },
+    {
+      "timestamp": "2025-12-18T05:00:00",
+      "actual_aqi": 414,
+      "actual_category": "Severe",
+      "pm25": 266.6,
+      "pm10": 423.4
+    },
+    {
+      "timestamp": "2025-12-18T06:00:00",
+      "actual_aqi": 388,
+      "actual_category": "Very Poor",
+      "pm25": 233.7,
+      "pm10": 382.6
+    },
+    {
+      "timestamp": "2025-12-18T07:00:00",
+      "actual_aqi": 365,
+      "actual_category": "Very Poor",
+      "pm25": 204.3,
+      "pm10": 320.3
+    },
+    {
+      "timestamp": "2025-12-18T08:00:00",
+      "actual_aqi": 359,
+      "actual_category": "Very Poor",
+      "pm25": 196.6,
+      "pm10": 279.3
+    },
+    {
+      "timestamp": "2025-12-18T09:00:00",
+      "actual_aqi": 348,
+      "actual_category": "Very Poor",
+      "pm25": 182.0,
+      "pm10": 274.0
+    },
+    {
+      "timestamp": "2025-12-18T10:00:00",
+      "actual_aqi": 336,
+      "actual_category": "Very Poor",
+      "pm25": 165.8,
+      "pm10": 293.7
+    },
+    {
+      "timestamp": "2025-12-18T11:00:00",
+      "actual_aqi": 326,
+      "actual_category": "Very Poor",
+      "pm25": 153.1,
+      "pm10": 312.3
+    },
+    {
+      "timestamp": "2025-12-18T12:00:00",
+      "actual_aqi": 322,
+      "actual_category": "Very Poor",
+      "pm25": 147.2,
+      "pm10": 322.3
+    },
+    {
+      "timestamp": "2025-12-18T13:00:00",
+      "actual_aqi": 329,
+      "actual_category": "Very Poor",
+      "pm25": 157.0,
+      "pm10": 334.0
+    },
+    {
+      "timestamp": "2025-12-18T14:00:00",
+      "actual_aqi": 334,
+      "actual_category": "Very Poor",
+      "pm25": 163.1,
+      "pm10": 339.9
+    },
+    {
+      "timestamp": "2025-12-18T15:00:00",
+      "actual_aqi": 342,
+      "actual_category": "Very Poor",
+      "pm25": 173.7,
+      "pm10": 339.4
+    },
+    {
+      "timestamp": "2025-12-18T16:00:00",
+      "actual_aqi": 354,
+      "actual_category": "Very Poor",
+      "pm25": 190.0,
+      "pm10": 343.3
+    },
+    {
+      "timestamp": "2025-12-18T17:00:00",
+      "actual_aqi": 368,
+      "actual_category": "Very Poor",
+      "pm25": 208.2,
+      "pm10": 351.0
+    },
+    {
+      "timestamp": "2025-12-18T18:00:00",
+      "actual_aqi": 368,
+      "actual_category": "Very Poor",
+      "pm25": 207.9,
+      "pm10": 352.8
+    },
+    {
+      "timestamp": "2025-12-18T19:00:00",
+      "actual_aqi": 371,
+      "actual_category": "Very Poor",
+      "pm25": 212.5,
+      "pm10": 359.6
+    },
+    {
+      "timestamp": "2025-12-18T20:00:00",
+      "actual_aqi": 393,
+      "actual_category": "Very Poor",
+      "pm25": 240.2,
+      "pm10": 368.5
+    },
+    {
+      "timestamp": "2025-12-18T21:00:00",
+      "actual_aqi": 407,
+      "actual_category": "Severe",
+      "pm25": 258.0,
+      "pm10": 376.9
+    },
+    {
+      "timestamp": "2025-12-18T22:00:00",
+      "actual_aqi": 424,
+      "actual_category": "Severe",
+      "pm25": 280.8,
+      "pm10": 414.6
+    },
+    {
+      "timestamp": "2025-12-18T23:00:00",
+      "actual_aqi": 428,
+      "actual_category": "Severe",
+      "pm25": 285.3,
+      "pm10": 421.7
+    },
+    {
+      "timestamp": "2025-12-19T00:00:00",
+      "actual_aqi": 396,
+      "actual_category": "Very Poor",
+      "pm25": 244.1,
+      "pm10": 373.7
+    },
+    {
+      "timestamp": "2025-12-19T01:00:00",
+      "actual_aqi": 369,
+      "actual_category": "Very Poor",
+      "pm25": 209.2,
+      "pm10": 336.3
+    },
+    {
+      "timestamp": "2025-12-19T02:00:00",
+      "actual_aqi": 370,
+      "actual_category": "Very Poor",
+      "pm25": 210.0,
+      "pm10": 321.1
+    },
+    {
+      "timestamp": "2025-12-19T03:00:00",
+      "actual_aqi": 357,
+      "actual_category": "Very Poor",
+      "pm25": 193.1,
+      "pm10": 292.4
+    },
+    {
+      "timestamp": "2025-12-19T04:00:00",
+      "actual_aqi": 345,
+      "actual_category": "Very Poor",
+      "pm25": 178.3,
+      "pm10": 285.9
+    },
+    {
+      "timestamp": "2025-12-19T05:00:00",
+      "actual_aqi": 330,
+      "actual_category": "Very Poor",
+      "pm25": 158.3,
+      "pm10": 280.4
+    },
+    {
+      "timestamp": "2025-12-19T06:00:00",
+      "actual_aqi": 304,
+      "actual_category": "Very Poor",
+      "pm25": 124.2,
+      "pm10": 245.7
+    },
+    {
+      "timestamp": "2025-12-19T07:00:00",
+      "actual_aqi": 293,
+      "actual_category": "Poor",
+      "pm25": 117.8,
+      "pm10": 222.3
+    },
+    {
+      "timestamp": "2025-12-19T08:00:00",
+      "actual_aqi": 315,
+      "actual_category": "Very Poor",
+      "pm25": 138.6,
+      "pm10": 225.0
+    },
+    {
+      "timestamp": "2025-12-19T09:00:00",
+      "actual_aqi": 329,
+      "actual_category": "Very Poor",
+      "pm25": 156.7,
+      "pm10": 243.2
+    },
+    {
+      "timestamp": "2025-12-19T10:00:00",
+      "actual_aqi": 329,
+      "actual_category": "Very Poor",
+      "pm25": 156.8,
+      "pm10": 261.9
+    },
+    {
+      "timestamp": "2025-12-19T11:00:00",
+      "actual_aqi": 332,
+      "actual_category": "Very Poor",
+      "pm25": 160.3,
+      "pm10": 276.7
+    },
+    {
+      "timestamp": "2025-12-19T12:00:00",
+      "actual_aqi": 339,
+      "actual_category": "Very Poor",
+      "pm25": 169.8,
+      "pm10": null
+    },
+    {
+      "timestamp": "2025-12-19T13:00:00",
+      "actual_aqi": 331,
+      "actual_category": "Very Poor",
+      "pm25": 160.0,
+      "pm10": null
+    },
+    {
+      "timestamp": "2025-12-19T14:00:00",
+      "actual_aqi": 254,
+      "actual_category": "Poor",
+      "pm25": null,
+      "pm10": 303.3
+    },
+    {
+      "timestamp": "2025-12-19T15:00:00",
+      "actual_aqi": 249,
+      "actual_category": "Poor",
+      "pm25": 80.2,
+      "pm10": 298.9
+    },
+    {
+      "timestamp": "2025-12-19T16:00:00",
+      "actual_aqi": 229,
+      "actual_category": "Poor",
+      "pm25": 94.3,
+      "pm10": 278.7
+    },
+    {
+      "timestamp": "2025-12-19T17:00:00",
+      "actual_aqi": 301,
+      "actual_category": "Very Poor",
+      "pm25": 120.5,
+      "pm10": 273.7
+    },
+    {
+      "timestamp": "2025-12-19T18:00:00",
+      "actual_aqi": 311,
+      "actual_category": "Very Poor",
+      "pm25": 132.9,
+      "pm10": 269.4
+    },
+    {
+      "timestamp": "2025-12-19T19:00:00",
+      "actual_aqi": 326,
+      "actual_category": "Very Poor",
+      "pm25": 152.4,
+      "pm10": 271.7
+    },
+    {
+      "timestamp": "2025-12-19T20:00:00",
+      "actual_aqi": 342,
+      "actual_category": "Very Poor",
+      "pm25": 173.6,
+      "pm10": 287.1
+    },
+    {
+      "timestamp": "2025-12-19T21:00:00",
+      "actual_aqi": 337,
+      "actual_category": "Very Poor",
+      "pm25": 167.8,
+      "pm10": 298.0
+    },
+    {
+      "timestamp": "2025-12-19T22:00:00",
+      "actual_aqi": 348,
+      "actual_category": "Very Poor",
+      "pm25": 181.8,
+      "pm10": 318.0
+    },
+    {
+      "timestamp": "2025-12-19T23:00:00",
+      "actual_aqi": 365,
+      "actual_category": "Very Poor",
+      "pm25": 204.3,
+      "pm10": 337.5
+    },
+    {
+      "timestamp": "2025-12-20T00:00:00",
+      "actual_aqi": 424,
+      "actual_category": "Severe",
+      "pm25": 280.1,
+      "pm10": 403.8
+    },
+    {
+      "timestamp": "2025-12-20T01:00:00",
+      "actual_aqi": 416,
+      "actual_category": "Severe",
+      "pm25": 269.4,
+      "pm10": 417.3
+    },
+    {
+      "timestamp": "2025-12-20T02:00:00",
+      "actual_aqi": 416,
+      "actual_category": "Severe",
+      "pm25": 270.2,
+      "pm10": 420.5
+    },
+    {
+      "timestamp": "2025-12-20T03:00:00",
+      "actual_aqi": 415,
+      "actual_category": "Severe",
+      "pm25": 268.1,
+      "pm10": 409.5
+    },
+    {
+      "timestamp": "2025-12-20T04:00:00",
+      "actual_aqi": 405,
+      "actual_category": "Severe",
+      "pm25": 255.9,
+      "pm10": 408.6
+    },
+    {
+      "timestamp": "2025-12-20T05:00:00",
+      "actual_aqi": 393,
+      "actual_category": "Very Poor",
+      "pm25": 240.3,
+      "pm10": 389.5
+    },
+    {
+      "timestamp": "2025-12-20T06:00:00",
+      "actual_aqi": 376,
+      "actual_category": "Very Poor",
+      "pm25": 218.6,
+      "pm10": 365.1
+    },
+    {
+      "timestamp": "2025-12-20T07:00:00",
+      "actual_aqi": 383,
+      "actual_category": "Very Poor",
+      "pm25": 228.1,
+      "pm10": 374.0
+    },
+    {
+      "timestamp": "2025-12-20T08:00:00",
+      "actual_aqi": 414,
+      "actual_category": "Severe",
+      "pm25": 267.2,
+      "pm10": 387.2
+    },
+    {
+      "timestamp": "2025-12-20T09:00:00",
+      "actual_aqi": 423,
+      "actual_category": "Severe",
+      "pm25": 278.9,
+      "pm10": 392.4
+    },
+    {
+      "timestamp": "2025-12-20T10:00:00",
+      "actual_aqi": 412,
+      "actual_category": "Severe",
+      "pm25": 264.0,
+      "pm10": 395.2
+    },
+    {
+      "timestamp": "2025-12-20T11:00:00",
+      "actual_aqi": 398,
+      "actual_category": "Very Poor",
+      "pm25": 247.5,
+      "pm10": 380.6
+    },
+    {
+      "timestamp": "2025-12-20T12:00:00",
+      "actual_aqi": 377,
+      "actual_category": "Very Poor",
+      "pm25": 220.2,
+      "pm10": 347.6
+    },
+    {
+      "timestamp": "2025-12-20T13:00:00",
+      "actual_aqi": 355,
+      "actual_category": "Very Poor",
+      "pm25": 191.5,
+      "pm10": 321.2
+    },
+    {
+      "timestamp": "2025-12-20T14:00:00",
+      "actual_aqi": 350,
+      "actual_category": "Very Poor",
+      "pm25": 183.7,
+      "pm10": 322.0
+    },
+    {
+      "timestamp": "2025-12-20T15:00:00",
+      "actual_aqi": 356,
+      "actual_category": "Very Poor",
+      "pm25": 192.8,
+      "pm10": 326.8
+    },
+    {
+      "timestamp": "2025-12-20T16:00:00",
+      "actual_aqi": 366,
+      "actual_category": "Very Poor",
+      "pm25": 206.1,
+      "pm10": 338.6
+    },
+    {
+      "timestamp": "2025-12-20T17:00:00",
+      "actual_aqi": 382,
+      "actual_category": "Very Poor",
+      "pm25": 226.4,
+      "pm10": 348.1
+    },
+    {
+      "timestamp": "2025-12-20T18:00:00",
+      "actual_aqi": 387,
+      "actual_category": "Very Poor",
+      "pm25": 232.6,
+      "pm10": 342.8
+    },
+    {
+      "timestamp": "2025-12-20T19:00:00",
+      "actual_aqi": 388,
+      "actual_category": "Very Poor",
+      "pm25": 234.8,
+      "pm10": 346.9
+    },
+    {
+      "timestamp": "2025-12-20T20:00:00",
+      "actual_aqi": 397,
+      "actual_category": "Very Poor",
+      "pm25": 245.6,
+      "pm10": 356.0
+    },
+    {
+      "timestamp": "2025-12-20T21:00:00",
+      "actual_aqi": 397,
+      "actual_category": "Very Poor",
+      "pm25": 246.5,
+      "pm10": 361.3
+    },
+    {
+      "timestamp": "2025-12-20T22:00:00",
+      "actual_aqi": 391,
+      "actual_category": "Very Poor",
+      "pm25": 238.5,
+      "pm10": 366.4
+    },
+    {
+      "timestamp": "2025-12-20T23:00:00",
+      "actual_aqi": 403,
+      "actual_category": "Severe",
+      "pm25": 252.3,
+      "pm10": 377.7
+    },
+    {
+      "timestamp": "2025-12-21T00:00:00",
+      "actual_aqi": 418,
+      "actual_category": "Severe",
+      "pm25": 272.5,
+      "pm10": 374.9
+    },
+    {
+      "timestamp": "2025-12-21T01:00:00",
+      "actual_aqi": 388,
+      "actual_category": "Very Poor",
+      "pm25": 234.7,
+      "pm10": 354.5
+    },
+    {
+      "timestamp": "2025-12-21T02:00:00",
+      "actual_aqi": 374,
+      "actual_category": "Very Poor",
+      "pm25": 216.2,
+      "pm10": 340.2
+    },
+    {
+      "timestamp": "2025-12-21T03:00:00",
+      "actual_aqi": 350,
+      "actual_category": "Very Poor",
+      "pm25": 184.9,
+      "pm10": 318.9
+    },
+    {
+      "timestamp": "2025-12-21T04:00:00",
+      "actual_aqi": 327,
+      "actual_category": "Very Poor",
+      "pm25": 154.0,
+      "pm10": 299.5
+    },
+    {
+      "timestamp": "2025-12-21T05:00:00",
+      "actual_aqi": 330,
+      "actual_category": "Very Poor",
+      "pm25": 158.1,
+      "pm10": 288.1
+    },
+    {
+      "timestamp": "2025-12-21T06:00:00",
+      "actual_aqi": 330,
+      "actual_category": "Very Poor",
+      "pm25": 157.8,
+      "pm10": 278.8
+    },
+    {
+      "timestamp": "2025-12-21T07:00:00",
+      "actual_aqi": 324,
+      "actual_category": "Very Poor",
+      "pm25": 150.5,
+      "pm10": 270.7
+    },
+    {
+      "timestamp": "2025-12-21T08:00:00",
+      "actual_aqi": 326,
+      "actual_category": "Very Poor",
+      "pm25": 153.6,
+      "pm10": 263.7
+    },
+    {
+      "timestamp": "2025-12-21T09:00:00",
+      "actual_aqi": 326,
+      "actual_category": "Very Poor",
+      "pm25": 153.0,
+      "pm10": 261.7
+    },
+    {
+      "timestamp": "2025-12-21T10:00:00",
+      "actual_aqi": 327,
+      "actual_category": "Very Poor",
+      "pm25": 154.1,
+      "pm10": 258.0
+    },
+    {
+      "timestamp": "2025-12-21T11:00:00",
+      "actual_aqi": 326,
+      "actual_category": "Very Poor",
+      "pm25": 152.9,
+      "pm10": 264.6
+    },
+    {
+      "timestamp": "2025-12-21T12:00:00",
+      "actual_aqi": 322,
+      "actual_category": "Very Poor",
+      "pm25": 147.2,
+      "pm10": 281.5
+    },
+    {
+      "timestamp": "2025-12-21T13:00:00",
+      "actual_aqi": 331,
+      "actual_category": "Very Poor",
+      "pm25": 159.8,
+      "pm10": 296.8
+    },
+    {
+      "timestamp": "2025-12-21T14:00:00",
+      "actual_aqi": 342,
+      "actual_category": "Very Poor",
+      "pm25": 174.0,
+      "pm10": 308.0
+    },
+    {
+      "timestamp": "2025-12-21T15:00:00",
+      "actual_aqi": 344,
+      "actual_category": "Very Poor",
+      "pm25": 177.1,
+      "pm10": 326.1
+    },
+    {
+      "timestamp": "2025-12-21T16:00:00",
+      "actual_aqi": 353,
+      "actual_category": "Very Poor",
+      "pm25": 188.1,
+      "pm10": 344.6
+    },
+    {
+      "timestamp": "2025-12-21T17:00:00",
+      "actual_aqi": 358,
+      "actual_category": "Very Poor",
+      "pm25": 195.3,
+      "pm10": 351.1
+    },
+    {
+      "timestamp": "2025-12-21T18:00:00",
+      "actual_aqi": 353,
+      "actual_category": "Very Poor",
+      "pm25": 188.2,
+      "pm10": 349.7
+    },
+    {
+      "timestamp": "2025-12-21T19:00:00",
+      "actual_aqi": 352,
+      "actual_category": "Very Poor",
+      "pm25": 186.3,
+      "pm10": 345.9
+    },
+    {
+      "timestamp": "2025-12-21T20:00:00",
+      "actual_aqi": 360,
+      "actual_category": "Very Poor",
+      "pm25": 197.3,
+      "pm10": 346.7
+    },
+    {
+      "timestamp": "2025-12-21T21:00:00",
+      "actual_aqi": 361,
+      "actual_category": "Very Poor",
+      "pm25": 199.0,
+      "pm10": 339.2
+    },
+    {
+      "timestamp": "2025-12-21T22:00:00",
+      "actual_aqi": 367,
+      "actual_category": "Very Poor",
+      "pm25": 206.3,
+      "pm10": 336.3
+    },
+    {
+      "timestamp": "2025-12-21T23:00:00",
+      "actual_aqi": 373,
+      "actual_category": "Very Poor",
+      "pm25": 215.1,
+      "pm10": 335.7
+    },
+    {
+      "timestamp": "2025-12-22T00:00:00",
+      "actual_aqi": 358,
+      "actual_category": "Very Poor",
+      "pm25": 195.0,
+      "pm10": 320.0
+    },
+    {
+      "timestamp": "2025-12-22T01:00:00",
+      "actual_aqi": 345,
+      "actual_category": "Very Poor",
+      "pm25": 178.1,
+      "pm10": 306.2
+    },
+    {
+      "timestamp": "2025-12-22T02:00:00",
+      "actual_aqi": 351,
+      "actual_category": "Very Poor",
+      "pm25": 185.7,
+      "pm10": 305.7
+    },
+    {
+      "timestamp": "2025-12-22T03:00:00",
+      "actual_aqi": 333,
+      "actual_category": "Very Poor",
+      "pm25": 162.6,
+      "pm10": 306.8
+    },
+    {
+      "timestamp": "2025-12-22T04:00:00",
+      "actual_aqi": 258,
+      "actual_category": "Poor",
+      "pm25": 79.6,
+      "pm10": 307.5
+    },
+    {
+      "timestamp": "2025-12-22T05:00:00",
+      "actual_aqi": 263,
+      "actual_category": "Poor",
+      "pm25": 45.0,
+      "pm10": 313.1
+    },
+    {
+      "timestamp": "2025-12-22T06:00:00",
+      "actual_aqi": 255,
+      "actual_category": "Poor",
+      "pm25": 29.5,
+      "pm10": 304.2
+    },
+    {
+      "timestamp": "2025-12-22T07:00:00",
+      "actual_aqi": 251,
+      "actual_category": "Poor",
+      "pm25": 18.6,
+      "pm10": 300.6
+    },
+    {
+      "timestamp": "2025-12-22T08:00:00",
+      "actual_aqi": 262,
+      "actual_category": "Poor",
+      "pm25": 15.4,
+      "pm10": 311.2
+    },
+    {
+      "timestamp": "2025-12-22T09:00:00",
+      "actual_aqi": 271,
+      "actual_category": "Poor",
+      "pm25": 13.3,
+      "pm10": 320.3
+    },
+    {
+      "timestamp": "2025-12-22T10:00:00",
+      "actual_aqi": 277,
+      "actual_category": "Poor",
+      "pm25": 37.7,
+      "pm10": 326.6
+    },
+    {
+      "timestamp": "2025-12-22T11:00:00",
+      "actual_aqi": 287,
+      "actual_category": "Poor",
+      "pm25": 52.5,
+      "pm10": 337.2
+    },
+    {
+      "timestamp": "2025-12-22T12:00:00",
+      "actual_aqi": 291,
+      "actual_category": "Poor",
+      "pm25": 51.8,
+      "pm10": 341.1
+    },
+    {
+      "timestamp": "2025-12-22T13:00:00",
+      "actual_aqi": 312,
+      "actual_category": "Very Poor",
+      "pm25": 51.8,
+      "pm10": 359.0
+    },
+    {
+      "timestamp": "2025-12-22T14:00:00",
+      "actual_aqi": 380,
+      "actual_category": "Very Poor",
+      "pm25": 50.9,
+      "pm10": 413.9
+    },
+    {
+      "timestamp": "2025-12-22T15:00:00",
+      "actual_aqi": 424,
+      "actual_category": "Severe",
+      "pm25": 50.8,
+      "pm10": 448.4
+    },
+    {
+      "timestamp": "2025-12-22T16:00:00",
+      "actual_aqi": 435,
+      "actual_category": "Severe",
+      "pm25": 51.4,
+      "pm10": 457.8
+    },
+    {
+      "timestamp": "2025-12-22T17:00:00",
+      "actual_aqi": 429,
+      "actual_category": "Severe",
+      "pm25": 63.6,
+      "pm10": 452.7
+    },
+    {
+      "timestamp": "2025-12-22T18:00:00",
+      "actual_aqi": 463,
+      "actual_category": "Severe",
+      "pm25": 331.9,
+      "pm10": 430.2
+    },
+    {
+      "timestamp": "2025-12-22T19:00:00",
+      "actual_aqi": 450,
+      "actual_category": "Severe",
+      "pm25": 314.0,
+      "pm10": 402.3
+    },
+    {
+      "timestamp": "2025-12-22T20:00:00",
+      "actual_aqi": 440,
+      "actual_category": "Severe",
+      "pm25": 301.2,
+      "pm10": 389.8
+    },
+    {
+      "timestamp": "2025-12-22T21:00:00",
+      "actual_aqi": 466,
+      "actual_category": "Severe",
+      "pm25": 335.9,
+      "pm10": 435.4
+    },
+    {
+      "timestamp": "2025-12-22T22:00:00",
+      "actual_aqi": 482,
+      "actual_category": "Severe",
+      "pm25": 356.2,
+      "pm10": 457.9
+    },
+    {
+      "timestamp": "2025-12-22T23:00:00",
+      "actual_aqi": 483,
+      "actual_category": "Severe",
+      "pm25": 357.4,
+      "pm10": 465.9
+    },
+    {
+      "timestamp": "2025-12-23T00:00:00",
+      "actual_aqi": 470,
+      "actual_category": "Severe",
+      "pm25": 340.6,
+      "pm10": 441.5
+    },
+    {
+      "timestamp": "2025-12-23T01:00:00",
+      "actual_aqi": 452,
+      "actual_category": "Severe",
+      "pm25": 317.7,
+      "pm10": 411.4
+    },
+    {
+      "timestamp": "2025-12-23T02:00:00",
+      "actual_aqi": 425,
+      "actual_category": "Severe",
+      "pm25": 282.0,
+      "pm10": 364.5
+    },
+    {
+      "timestamp": "2025-12-23T03:00:00",
+      "actual_aqi": 406,
+      "actual_category": "Severe",
+      "pm25": 256.3,
+      "pm10": 330.7
+    },
+    {
+      "timestamp": "2025-12-23T04:00:00",
+      "actual_aqi": 412,
+      "actual_category": "Severe",
+      "pm25": 264.9,
+      "pm10": 341.9
+    },
+    {
+      "timestamp": "2025-12-23T05:00:00",
+      "actual_aqi": 416,
+      "actual_category": "Severe",
+      "pm25": 269.3,
+      "pm10": 347.8
+    },
+    {
+      "timestamp": "2025-12-23T06:00:00",
+      "actual_aqi": 403,
+      "actual_category": "Severe",
+      "pm25": 252.7,
+      "pm10": 325.9
+    },
+    {
+      "timestamp": "2025-12-23T07:00:00",
+      "actual_aqi": 392,
+      "actual_category": "Very Poor",
+      "pm25": 239.9,
+      "pm10": 309.1
+    },
+    {
+      "timestamp": "2025-12-23T08:00:00",
+      "actual_aqi": 394,
+      "actual_category": "Very Poor",
+      "pm25": 241.7,
+      "pm10": 311.5
+    },
+    {
+      "timestamp": "2025-12-23T09:00:00",
+      "actual_aqi": 391,
+      "actual_category": "Very Poor",
+      "pm25": 238.6,
+      "pm10": 307.3
+    },
+    {
+      "timestamp": "2025-12-23T10:00:00",
+      "actual_aqi": 378,
+      "actual_category": "Very Poor",
+      "pm25": 220.8,
+      "pm10": 284.0
+    },
+    {
+      "timestamp": "2025-12-23T11:00:00",
+      "actual_aqi": 377,
+      "actual_category": "Very Poor",
+      "pm25": 219.7,
+      "pm10": 282.5
+    },
+    {
+      "timestamp": "2025-12-23T12:00:00",
+      "actual_aqi": 324,
+      "actual_category": "Very Poor",
+      "pm25": 150.2,
+      "pm10": 286.4
+    },
+    {
+      "timestamp": "2025-12-23T13:00:00",
+      "actual_aqi": 336,
+      "actual_category": "Very Poor",
+      "pm25": 166.0,
+      "pm10": 286.8
+    },
+    {
+      "timestamp": "2025-12-23T14:00:00",
+      "actual_aqi": 359,
+      "actual_category": "Very Poor",
+      "pm25": 196.3,
+      "pm10": 290.1
+    },
+    {
+      "timestamp": "2025-12-23T15:00:00",
+      "actual_aqi": 361,
+      "actual_category": "Very Poor",
+      "pm25": 199.1,
+      "pm10": 285.0
+    },
+    {
+      "timestamp": "2025-12-23T16:00:00",
+      "actual_aqi": 363,
+      "actual_category": "Very Poor",
+      "pm25": 201.5,
+      "pm10": 248.6
+    },
+    {
+      "timestamp": "2025-12-23T17:00:00",
+      "actual_aqi": null,
+      "actual_category": "Insufficient Data",
+      "pm25": null,
+      "pm10": null
+    },
+    {
+      "timestamp": "2025-12-23T18:00:00",
+      "actual_aqi": 320,
+      "actual_category": "Very Poor",
+      "pm25": 144.9,
+      "pm10": 251.1
+    },
+    {
+      "timestamp": "2025-12-23T19:00:00",
+      "actual_aqi": 331,
+      "actual_category": "Very Poor",
+      "pm25": 159.1,
+      "pm10": 262.1
+    },
+    {
+      "timestamp": "2025-12-23T20:00:00",
+      "actual_aqi": 362,
+      "actual_category": "Very Poor",
+      "pm25": 199.6,
+      "pm10": 287.2
+    },
+    {
+      "timestamp": "2025-12-23T21:00:00",
+      "actual_aqi": 382,
+      "actual_category": "Very Poor",
+      "pm25": 226.3,
+      "pm10": 301.0
+    },
+    {
+      "timestamp": "2025-12-23T22:00:00",
+      "actual_aqi": 362,
+      "actual_category": "Very Poor",
+      "pm25": 200.1,
+      "pm10": 300.6
+    },
+    {
+      "timestamp": "2025-12-23T23:00:00",
+      "actual_aqi": 341,
+      "actual_category": "Very Poor",
+      "pm25": 172.4,
+      "pm10": 293.0
+    },
+    {
+      "timestamp": "2025-12-24T00:00:00",
+      "actual_aqi": 326,
+      "actual_category": "Very Poor",
+      "pm25": 153.3,
+      "pm10": 269.6
+    },
+    {
+      "timestamp": "2025-12-24T01:00:00",
+      "actual_aqi": 335,
+      "actual_category": "Very Poor",
+      "pm25": 164.3,
+      "pm10": 248.1
+    },
+    {
+      "timestamp": "2025-12-24T02:00:00",
+      "actual_aqi": 326,
+      "actual_category": "Very Poor",
+      "pm25": 152.3,
+      "pm10": 228.1
+    },
+    {
+      "timestamp": "2025-12-24T03:00:00",
+      "actual_aqi": 274,
+      "actual_category": "Poor",
+      "pm25": 112.2,
+      "pm10": 214.2
+    },
+    {
+      "timestamp": "2025-12-24T04:00:00",
+      "actual_aqi": 262,
+      "actual_category": "Poor",
+      "pm25": 108.4,
+      "pm10": 199.8
+    },
+    {
+      "timestamp": "2025-12-24T05:00:00",
+      "actual_aqi": 226,
+      "actual_category": "Poor",
+      "pm25": 97.7,
+      "pm10": 184.1
+    },
+    {
+      "timestamp": "2025-12-24T06:00:00",
+      "actual_aqi": 302,
+      "actual_category": "Very Poor",
+      "pm25": 122.0,
+      "pm10": 178.2
+    },
+    {
+      "timestamp": "2025-12-24T07:00:00",
+      "actual_aqi": 284,
+      "actual_category": "Poor",
+      "pm25": 115.1,
+      "pm10": 175.2
+    },
+    {
+      "timestamp": "2025-12-24T08:00:00",
+      "actual_aqi": 139,
+      "actual_category": "Moderate",
+      "pm25": 68.4,
+      "pm10": 157.1
+    },
+    {
+      "timestamp": "2025-12-24T09:00:00",
+      "actual_aqi": null,
+      "actual_category": "Insufficient Data",
+      "pm25": null,
+      "pm10": null
+    },
+    {
+      "timestamp": "2025-12-24T10:00:00",
+      "actual_aqi": 302,
+      "actual_category": "Very Poor",
+      "pm25": 121.4,
+      "pm10": 192.2
+    },
+    {
+      "timestamp": "2025-12-24T11:00:00",
+      "actual_aqi": 259,
+      "actual_category": "Poor",
+      "pm25": 107.6,
+      "pm10": 203.8
+    },
+    {
+      "timestamp": "2025-12-24T12:00:00",
+      "actual_aqi": 187,
+      "actual_category": "Moderate",
+      "pm25": 86.1,
+      "pm10": 193.5
+    },
+    {
+      "timestamp": "2025-12-24T13:00:00",
+      "actual_aqi": 161,
+      "actual_category": "Moderate",
+      "pm25": 76.5,
+      "pm10": 191.6
+    },
+    {
+      "timestamp": "2025-12-24T14:00:00",
+      "actual_aqi": 157,
+      "actual_category": "Moderate",
+      "pm25": 64.5,
+      "pm10": 184.8
+    },
+    {
+      "timestamp": "2025-12-24T15:00:00",
+      "actual_aqi": 158,
+      "actual_category": "Moderate",
+      "pm25": 36.2,
+      "pm10": 185.8
+    },
+    {
+      "timestamp": "2025-12-24T16:00:00",
+      "actual_aqi": 158,
+      "actual_category": "Moderate",
+      "pm25": 26.3,
+      "pm10": 186.3
+    },
+    {
+      "timestamp": "2025-12-24T17:00:00",
+      "actual_aqi": 145,
+      "actual_category": "Moderate",
+      "pm25": 69.7,
+      "pm10": 166.4
+    },
+    {
+      "timestamp": "2025-12-24T18:00:00",
+      "actual_aqi": null,
+      "actual_category": "Insufficient Data",
+      "pm25": null,
+      "pm10": null
+    },
+    {
+      "timestamp": "2025-12-24T19:00:00",
+      "actual_aqi": 331,
+      "actual_category": "Very Poor",
+      "pm25": 159.2,
+      "pm10": 174.7
+    },
+    {
+      "timestamp": "2025-12-24T20:00:00",
+      "actual_aqi": 330,
+      "actual_category": "Very Poor",
+      "pm25": 158.2,
+      "pm10": 184.2
+    },
+    {
+      "timestamp": "2025-12-24T21:00:00",
+      "actual_aqi": 319,
+      "actual_category": "Very Poor",
+      "pm25": 143.9,
+      "pm10": 204.5
+    },
+    {
+      "timestamp": "2025-12-24T22:00:00",
+      "actual_aqi": 342,
+      "actual_category": "Very Poor",
+      "pm25": 173.2,
+      "pm10": 219.0
+    },
+    {
+      "timestamp": "2025-12-24T23:00:00",
+      "actual_aqi": 330,
+      "actual_category": "Very Poor",
+      "pm25": 158.1,
+      "pm10": 229.4
+    },
+    {
+      "timestamp": "2025-12-25T00:00:00",
+      "actual_aqi": 345,
+      "actual_category": "Very Poor",
+      "pm25": 177.4,
+      "pm10": 233.2
+    },
+    {
+      "timestamp": "2025-12-25T01:00:00",
+      "actual_aqi": 332,
+      "actual_category": "Very Poor",
+      "pm25": 161.0,
+      "pm10": 215.8
+    },
+    {
+      "timestamp": "2025-12-25T02:00:00",
+      "actual_aqi": 320,
+      "actual_category": "Very Poor",
+      "pm25": 145.3,
+      "pm10": 212.3
+    },
+    {
+      "timestamp": "2025-12-25T03:00:00",
+      "actual_aqi": 308,
+      "actual_category": "Very Poor",
+      "pm25": 129.5,
+      "pm10": 210.7
+    },
+    {
+      "timestamp": "2025-12-25T04:00:00",
+      "actual_aqi": 337,
+      "actual_category": "Very Poor",
+      "pm25": 167.3,
+      "pm10": 204.6
+    },
+    {
+      "timestamp": "2025-12-25T05:00:00",
+      "actual_aqi": 329,
+      "actual_category": "Very Poor",
+      "pm25": 157.3,
+      "pm10": 206.7
+    },
+    {
+      "timestamp": "2025-12-25T06:00:00",
+      "actual_aqi": 313,
+      "actual_category": "Very Poor",
+      "pm25": 135.8,
+      "pm10": 204.7
+    },
+    {
+      "timestamp": "2025-12-25T07:00:00",
+      "actual_aqi": 308,
+      "actual_category": "Very Poor",
+      "pm25": 128.8,
+      "pm10": 196.8
+    },
+    {
+      "timestamp": "2025-12-25T08:00:00",
+      "actual_aqi": 206,
+      "actual_category": "Poor",
+      "pm25": 91.7,
+      "pm10": 190.3
+    },
+    {
+      "timestamp": "2025-12-25T09:00:00",
+      "actual_aqi": 227,
+      "actual_category": "Poor",
+      "pm25": 98.0,
+      "pm10": 183.9
+    },
+    {
+      "timestamp": "2025-12-25T10:00:00",
+      "actual_aqi": 307,
+      "actual_category": "Very Poor",
+      "pm25": 128.1,
+      "pm10": 196.2
+    },
+    {
+      "timestamp": "2025-12-25T11:00:00",
+      "actual_aqi": 301,
+      "actual_category": "Very Poor",
+      "pm25": 120.4,
+      "pm10": 213.4
+    },
+    {
+      "timestamp": "2025-12-25T12:00:00",
+      "actual_aqi": 315,
+      "actual_category": "Very Poor",
+      "pm25": 138.8,
+      "pm10": 218.2
+    },
+    {
+      "timestamp": "2025-12-25T13:00:00",
+      "actual_aqi": 320,
+      "actual_category": "Very Poor",
+      "pm25": 145.6,
+      "pm10": 213.0
+    },
+    {
+      "timestamp": "2025-12-25T14:00:00",
+      "actual_aqi": 319,
+      "actual_category": "Very Poor",
+      "pm25": 143.3,
+      "pm10": 210.8
+    },
+    {
+      "timestamp": "2025-12-25T15:00:00",
+      "actual_aqi": 306,
+      "actual_category": "Very Poor",
+      "pm25": 127.3,
+      "pm10": 209.9
+    },
+    {
+      "timestamp": "2025-12-25T16:00:00",
+      "actual_aqi": 165,
+      "actual_category": "Moderate",
+      "pm25": 71.9,
+      "pm10": 197.0
+    },
+    {
+      "timestamp": "2025-12-25T17:00:00",
+      "actual_aqi": 156,
+      "actual_category": "Moderate",
+      "pm25": 62.7,
+      "pm10": 184.1
+    },
+    {
+      "timestamp": "2025-12-25T18:00:00",
+      "actual_aqi": 155,
+      "actual_category": "Moderate",
+      "pm25": 60.5,
+      "pm10": 182.1
+    },
+    {
+      "timestamp": "2025-12-25T19:00:00",
+      "actual_aqi": 170,
+      "actual_category": "Moderate",
+      "pm25": 77.9,
+      "pm10": 205.3
+    },
+    {
+      "timestamp": "2025-12-25T20:00:00",
+      "actual_aqi": 336,
+      "actual_category": "Very Poor",
+      "pm25": 165.9,
+      "pm10": 263.0
+    },
+    {
+      "timestamp": "2025-12-25T21:00:00",
+      "actual_aqi": 381,
+      "actual_category": "Very Poor",
+      "pm25": 225.6,
+      "pm10": 295.8
+    },
+    {
+      "timestamp": "2025-12-25T22:00:00",
+      "actual_aqi": 457,
+      "actual_category": "Severe",
+      "pm25": 311.4,
+      "pm10": 475.4
+    },
+    {
+      "timestamp": "2025-12-25T23:00:00",
+      "actual_aqi": 465,
+      "actual_category": "Severe",
+      "pm25": 334.6,
+      "pm10": 423.6
+    },
+    {
+      "timestamp": "2025-12-26T00:00:00",
+      "actual_aqi": 476,
+      "actual_category": "Severe",
+      "pm25": 348.9,
+      "pm10": 394.5
+    },
+    {
+      "timestamp": "2025-12-26T01:00:00",
+      "actual_aqi": 500,
+      "actual_category": "Severe",
+      "pm25": 379.6,
+      "pm10": 416.9
+    },
+    {
+      "timestamp": "2025-12-26T02:00:00",
+      "actual_aqi": 497,
+      "actual_category": "Severe",
+      "pm25": 376.1,
+      "pm10": 422.1
+    },
+    {
+      "timestamp": "2025-12-26T03:00:00",
+      "actual_aqi": 498,
+      "actual_category": "Severe",
+      "pm25": 376.8,
+      "pm10": 401.4
+    },
+    {
+      "timestamp": "2025-12-26T04:00:00",
+      "actual_aqi": 494,
+      "actual_category": "Severe",
+      "pm25": 372.7,
+      "pm10": 401.5
+    },
+    {
+      "timestamp": "2025-12-26T05:00:00",
+      "actual_aqi": 492,
+      "actual_category": "Severe",
+      "pm25": 369.7,
+      "pm10": 413.6
+    },
+    {
+      "timestamp": "2025-12-26T06:00:00",
+      "actual_aqi": null,
+      "actual_category": "Insufficient Data",
+      "pm25": null,
+      "pm10": null
+    },
+    {
+      "timestamp": "2025-12-26T07:00:00",
+      "actual_aqi": 438,
+      "actual_category": "Severe",
+      "pm25": 299.0,
+      "pm10": 397.3
+    },
+    {
+      "timestamp": "2025-12-26T08:00:00",
+      "actual_aqi": 438,
+      "actual_category": "Severe",
+      "pm25": 298.8,
+      "pm10": 436.4
+    },
+    {
+      "timestamp": "2025-12-26T09:00:00",
+      "actual_aqi": 488,
+      "actual_category": "Severe",
+      "pm25": 363.7,
+      "pm10": 419.1
+    },
+    {
+      "timestamp": "2025-12-26T10:00:00",
+      "actual_aqi": null,
+      "actual_category": "Insufficient Data",
+      "pm25": null,
+      "pm10": null
+    },
+    {
+      "timestamp": "2025-12-26T11:00:00",
+      "actual_aqi": null,
+      "actual_category": "Insufficient Data",
+      "pm25": null,
+      "pm10": null
+    },
+    {
+      "timestamp": "2025-12-26T12:00:00",
+      "actual_aqi": null,
+      "actual_category": "Insufficient Data",
+      "pm25": null,
+      "pm10": null
+    },
+    {
+      "timestamp": "2025-12-26T13:00:00",
+      "actual_aqi": null,
+      "actual_category": "Insufficient Data",
+      "pm25": null,
+      "pm10": null
+    },
+    {
+      "timestamp": "2025-12-26T14:00:00",
+      "actual_aqi": 303,
+      "actual_category": "Very Poor",
+      "pm25": 122.2,
+      "pm10": 198.3
+    },
+    {
+      "timestamp": "2025-12-26T15:00:00",
+      "actual_aqi": 275,
+      "actual_category": "Poor",
+      "pm25": 112.5,
+      "pm10": 205.8
+    },
+    {
+      "timestamp": "2025-12-26T16:00:00",
+      "actual_aqi": 303,
+      "actual_category": "Very Poor",
+      "pm25": 122.4,
+      "pm10": 201.4
+    },
+    {
+      "timestamp": "2025-12-26T17:00:00",
+      "actual_aqi": 318,
+      "actual_category": "Very Poor",
+      "pm25": 142.7,
+      "pm10": 234.9
+    },
+    {
+      "timestamp": "2025-12-26T18:00:00",
+      "actual_aqi": 335,
+      "actual_category": "Very Poor",
+      "pm25": 164.5,
+      "pm10": 296.6
+    },
+    {
+      "timestamp": "2025-12-26T19:00:00",
+      "actual_aqi": 337,
+      "actual_category": "Very Poor",
+      "pm25": 167.5,
+      "pm10": 318.4
+    },
+    {
+      "timestamp": "2025-12-26T20:00:00",
+      "actual_aqi": 363,
+      "actual_category": "Very Poor",
+      "pm25": 201.2,
+      "pm10": 337.2
+    },
+    {
+      "timestamp": "2025-12-26T21:00:00",
+      "actual_aqi": 416,
+      "actual_category": "Severe",
+      "pm25": 270.5,
+      "pm10": 396.3
+    },
+    {
+      "timestamp": "2025-12-26T22:00:00",
+      "actual_aqi": 450,
+      "actual_category": "Severe",
+      "pm25": 314.6,
+      "pm10": 455.4
+    },
+    {
+      "timestamp": "2025-12-26T23:00:00",
+      "actual_aqi": 485,
+      "actual_category": "Severe",
+      "pm25": 348.1,
+      "pm10": 497.6
+    },
+    {
+      "timestamp": "2025-12-27T00:00:00",
+      "actual_aqi": 483,
+      "actual_category": "Severe",
+      "pm25": 357.4,
+      "pm10": 451.9
+    },
+    {
+      "timestamp": "2025-12-27T01:00:00",
+      "actual_aqi": null,
+      "actual_category": "Insufficient Data",
+      "pm25": null,
+      "pm10": null
+    },
+    {
+      "timestamp": "2025-12-27T02:00:00",
+      "actual_aqi": null,
+      "actual_category": "Insufficient Data",
+      "pm25": null,
+      "pm10": null
+    },
+    {
+      "timestamp": "2025-12-27T03:00:00",
+      "actual_aqi": 441,
+      "actual_category": "Severe",
+      "pm25": 302.9,
+      "pm10": 356.7
+    },
+    {
+      "timestamp": "2025-12-27T04:00:00",
+      "actual_aqi": 439,
+      "actual_category": "Severe",
+      "pm25": 300.6,
+      "pm10": 380.6
+    },
+    {
+      "timestamp": "2025-12-27T05:00:00",
+      "actual_aqi": 461,
+      "actual_category": "Severe",
+      "pm25": 328.3,
+      "pm10": 415.6
+    },
+    {
+      "timestamp": "2025-12-27T06:00:00",
+      "actual_aqi": 457,
+      "actual_category": "Severe",
+      "pm25": 323.8,
+      "pm10": 378.6
+    },
+    {
+      "timestamp": "2025-12-27T07:00:00",
+      "actual_aqi": 439,
+      "actual_category": "Severe",
+      "pm25": 300.5,
+      "pm10": 351.1
+    },
+    {
+      "timestamp": "2025-12-27T08:00:00",
+      "actual_aqi": 426,
+      "actual_category": "Severe",
+      "pm25": 283.5,
+      "pm10": 354.3
+    },
+    {
+      "timestamp": "2025-12-27T09:00:00",
+      "actual_aqi": 456,
+      "actual_category": "Severe",
+      "pm25": 321.7,
+      "pm10": 341.2
+    },
+    {
+      "timestamp": "2025-12-27T10:00:00",
+      "actual_aqi": null,
+      "actual_category": "Insufficient Data",
+      "pm25": null,
+      "pm10": null
+    },
+    {
+      "timestamp": "2025-12-27T11:00:00",
+      "actual_aqi": 428,
+      "actual_category": "Severe",
+      "pm25": 285.8,
+      "pm10": 342.6
+    },
+    {
+      "timestamp": "2025-12-27T12:00:00",
+      "actual_aqi": 394,
+      "actual_category": "Very Poor",
+      "pm25": 241.5,
+      "pm10": 327.1
+    },
+    {
+      "timestamp": "2025-12-27T13:00:00",
+      "actual_aqi": 375,
+      "actual_category": "Very Poor",
+      "pm25": 217.0,
+      "pm10": 316.5
+    },
+    {
+      "timestamp": "2025-12-27T14:00:00",
+      "actual_aqi": 346,
+      "actual_category": "Very Poor",
+      "pm25": 179.6,
+      "pm10": 311.4
+    },
+    {
+      "timestamp": "2025-12-27T15:00:00",
+      "actual_aqi": 354,
+      "actual_category": "Very Poor",
+      "pm25": 189.1,
+      "pm10": 278.6
+    },
+    {
+      "timestamp": "2025-12-27T16:00:00",
+      "actual_aqi": 332,
+      "actual_category": "Very Poor",
+      "pm25": 161.1,
+      "pm10": 242.7
+    },
+    {
+      "timestamp": "2025-12-27T17:00:00",
+      "actual_aqi": 310,
+      "actual_category": "Very Poor",
+      "pm25": 132.0,
+      "pm10": 234.1
+    },
+    {
+      "timestamp": "2025-12-27T18:00:00",
+      "actual_aqi": 337,
+      "actual_category": "Very Poor",
+      "pm25": 167.0,
+      "pm10": 254.5
+    },
+    {
+      "timestamp": "2025-12-27T19:00:00",
+      "actual_aqi": 374,
+      "actual_category": "Very Poor",
+      "pm25": 216.2,
+      "pm10": 275.3
+    },
+    {
+      "timestamp": "2025-12-27T20:00:00",
+      "actual_aqi": 370,
+      "actual_category": "Very Poor",
+      "pm25": 210.0,
+      "pm10": 302.4
+    },
+    {
+      "timestamp": "2025-12-27T21:00:00",
+      "actual_aqi": 369,
+      "actual_category": "Very Poor",
+      "pm25": 209.3,
+      "pm10": 330.5
+    },
+    {
+      "timestamp": "2025-12-27T22:00:00",
+      "actual_aqi": 390,
+      "actual_category": "Very Poor",
+      "pm25": 237.0,
+      "pm10": 334.1
+    },
+    {
+      "timestamp": "2025-12-27T23:00:00",
+      "actual_aqi": 386,
+      "actual_category": "Very Poor",
+      "pm25": 231.7,
+      "pm10": 334.5
+    },
+    {
+      "timestamp": "2025-12-28T00:00:00",
+      "actual_aqi": 393,
+      "actual_category": "Very Poor",
+      "pm25": 241.0,
+      "pm10": 333.4
+    },
+    {
+      "timestamp": "2025-12-28T01:00:00",
+      "actual_aqi": 393,
+      "actual_category": "Very Poor",
+      "pm25": 241.3,
+      "pm10": 337.2
+    },
+    {
+      "timestamp": "2025-12-28T02:00:00",
+      "actual_aqi": 387,
+      "actual_category": "Very Poor",
+      "pm25": 233.3,
+      "pm10": 340.6
+    },
+    {
+      "timestamp": "2025-12-28T03:00:00",
+      "actual_aqi": 399,
+      "actual_category": "Very Poor",
+      "pm25": 249.3,
+      "pm10": 337.6
+    },
+    {
+      "timestamp": "2025-12-28T04:00:00",
+      "actual_aqi": 406,
+      "actual_category": "Severe",
+      "pm25": 256.2,
+      "pm10": 333.2
+    },
+    {
+      "timestamp": "2025-12-28T05:00:00",
+      "actual_aqi": 398,
+      "actual_category": "Very Poor",
+      "pm25": 247.4,
+      "pm10": 329.3
+    },
+    {
+      "timestamp": "2025-12-28T06:00:00",
+      "actual_aqi": 402,
+      "actual_category": "Severe",
+      "pm25": 251.6,
+      "pm10": 326.4
+    },
+    {
+      "timestamp": "2025-12-28T07:00:00",
+      "actual_aqi": 414,
+      "actual_category": "Severe",
+      "pm25": 267.6,
+      "pm10": 333.3
+    },
+    {
+      "timestamp": "2025-12-28T08:00:00",
+      "actual_aqi": 412,
+      "actual_category": "Severe",
+      "pm25": 264.6,
+      "pm10": 340.6
+    },
+    {
+      "timestamp": "2025-12-28T09:00:00",
+      "actual_aqi": 433,
+      "actual_category": "Severe",
+      "pm25": 292.0,
+      "pm10": 338.3
+    },
+    {
+      "timestamp": "2025-12-28T10:00:00",
+      "actual_aqi": null,
+      "actual_category": "Insufficient Data",
+      "pm25": null,
+      "pm10": null
+    },
+    {
+      "timestamp": "2025-12-28T11:00:00",
+      "actual_aqi": 443,
+      "actual_category": "Severe",
+      "pm25": 305.2,
+      "pm10": 340.1
+    },
+    {
+      "timestamp": "2025-12-28T12:00:00",
+      "actual_aqi": 333,
+      "actual_category": "Very Poor",
+      "pm25": 162.3,
+      "pm10": 332.3
+    },
+    {
+      "timestamp": "2025-12-28T13:00:00",
+      "actual_aqi": 367,
+      "actual_category": "Very Poor",
+      "pm25": 206.4,
+      "pm10": 343.1
+    },
+    {
+      "timestamp": "2025-12-28T14:00:00",
+      "actual_aqi": 383,
+      "actual_category": "Very Poor",
+      "pm25": 227.6,
+      "pm10": 344.0
+    },
+    {
+      "timestamp": "2025-12-28T15:00:00",
+      "actual_aqi": 358,
+      "actual_category": "Very Poor",
+      "pm25": 195.2,
+      "pm10": 324.9
+    },
+    {
+      "timestamp": "2025-12-28T16:00:00",
+      "actual_aqi": 378,
+      "actual_category": "Very Poor",
+      "pm25": 221.6,
+      "pm10": 326.1
+    },
+    {
+      "timestamp": "2025-12-28T17:00:00",
+      "actual_aqi": 382,
+      "actual_category": "Very Poor",
+      "pm25": 226.4,
+      "pm10": 341.7
+    },
+    {
+      "timestamp": "2025-12-28T18:00:00",
+      "actual_aqi": 383,
+      "actual_category": "Very Poor",
+      "pm25": 228.0,
+      "pm10": 341.1
+    },
+    {
+      "timestamp": "2025-12-28T19:00:00",
+      "actual_aqi": 381,
+      "actual_category": "Very Poor",
+      "pm25": 224.7,
+      "pm10": 338.0
+    },
+    {
+      "timestamp": "2025-12-28T20:00:00",
+      "actual_aqi": 392,
+      "actual_category": "Very Poor",
+      "pm25": 240.2,
+      "pm10": 366.8
+    },
+    {
+      "timestamp": "2025-12-28T21:00:00",
+      "actual_aqi": 439,
+      "actual_category": "Severe",
+      "pm25": 300.5,
+      "pm10": 390.4
+    },
+    {
+      "timestamp": "2025-12-28T22:00:00",
+      "actual_aqi": 431,
+      "actual_category": "Severe",
+      "pm25": 289.1,
+      "pm10": 391.5
+    },
+    {
+      "timestamp": "2025-12-28T23:00:00",
+      "actual_aqi": null,
+      "actual_category": "Insufficient Data",
+      "pm25": 278.4,
+      "pm10": null
+    },
+    {
+      "timestamp": "2025-12-29T00:00:00",
+      "actual_aqi": 426,
+      "actual_category": "Severe",
+      "pm25": 282.4,
+      "pm10": 371.1
+    },
+    {
+      "timestamp": "2025-12-29T01:00:00",
+      "actual_aqi": 439,
+      "actual_category": "Severe",
+      "pm25": 299.9,
+      "pm10": 406.0
+    },
+    {
+      "timestamp": "2025-12-29T02:00:00",
+      "actual_aqi": 466,
+      "actual_category": "Severe",
+      "pm25": 335.1,
+      "pm10": 436.5
+    },
+    {
+      "timestamp": "2025-12-29T03:00:00",
+      "actual_aqi": 500,
+      "actual_category": "Severe",
+      "pm25": 381.2,
+      "pm10": 469.4
+    },
+    {
+      "timestamp": "2025-12-29T04:00:00",
+      "actual_aqi": 495,
+      "actual_category": "Severe",
+      "pm25": 373.1,
+      "pm10": 427.3
+    },
+    {
+      "timestamp": "2025-12-29T05:00:00",
+      "actual_aqi": 462,
+      "actual_category": "Severe",
+      "pm25": 330.2,
+      "pm10": 399.1
+    },
+    {
+      "timestamp": "2025-12-29T06:00:00",
+      "actual_aqi": 422,
+      "actual_category": "Severe",
+      "pm25": 277.2,
+      "pm10": 351.8
+    },
+    {
+      "timestamp": "2025-12-29T07:00:00",
+      "actual_aqi": 420,
+      "actual_category": "Severe",
+      "pm25": 274.7,
+      "pm10": 330.3
+    },
+    {
+      "timestamp": "2025-12-29T08:00:00",
+      "actual_aqi": 413,
+      "actual_category": "Severe",
+      "pm25": 266.0,
+      "pm10": 329.7
+    },
+    {
+      "timestamp": "2025-12-29T09:00:00",
+      "actual_aqi": 418,
+      "actual_category": "Severe",
+      "pm25": 273.1,
+      "pm10": 319.9
+    },
+    {
+      "timestamp": "2025-12-29T10:00:00",
+      "actual_aqi": 434,
+      "actual_category": "Severe",
+      "pm25": 293.5,
+      "pm10": 319.3
+    },
+    {
+      "timestamp": "2025-12-29T11:00:00",
+      "actual_aqi": 270,
+      "actual_category": "Poor",
+      "pm25": null,
+      "pm10": 320.0
+    },
+    {
+      "timestamp": "2025-12-29T12:00:00",
+      "actual_aqi": 260,
+      "actual_category": "Poor",
+      "pm25": null,
+      "pm10": 309.3
+    },
+    {
+      "timestamp": "2025-12-29T13:00:00",
+      "actual_aqi": 384,
+      "actual_category": "Very Poor",
+      "pm25": 229.2,
+      "pm10": 302.6
+    },
+    {
+      "timestamp": "2025-12-29T14:00:00",
+      "actual_aqi": 366,
+      "actual_category": "Very Poor",
+      "pm25": 205.0,
+      "pm10": null
+    },
+    {
+      "timestamp": "2025-12-29T15:00:00",
+      "actual_aqi": 425,
+      "actual_category": "Severe",
+      "pm25": 281.7,
+      "pm10": null
+    },
+    {
+      "timestamp": "2025-12-29T16:00:00",
+      "actual_aqi": 500,
+      "actual_category": "Severe",
+      "pm25": 455.8,
+      "pm10": null
+    },
+    {
+      "timestamp": "2025-12-29T17:00:00",
+      "actual_aqi": 487,
+      "actual_category": "Severe",
+      "pm25": 362.4,
+      "pm10": 464.1
+    },
+    {
+      "timestamp": "2025-12-29T18:00:00",
+      "actual_aqi": 389,
+      "actual_category": "Very Poor",
+      "pm25": 235.6,
+      "pm10": 409.4
+    },
+    {
+      "timestamp": "2025-12-29T19:00:00",
+      "actual_aqi": 373,
+      "actual_category": "Very Poor",
+      "pm25": 215.1,
+      "pm10": 355.2
+    },
+    {
+      "timestamp": "2025-12-29T20:00:00",
+      "actual_aqi": 364,
+      "actual_category": "Very Poor",
+      "pm25": 202.7,
+      "pm10": 302.2
+    },
+    {
+      "timestamp": "2025-12-29T21:00:00",
+      "actual_aqi": 351,
+      "actual_category": "Very Poor",
+      "pm25": 185.9,
+      "pm10": 293.8
+    },
+    {
+      "timestamp": "2025-12-29T22:00:00",
+      "actual_aqi": 335,
+      "actual_category": "Very Poor",
+      "pm25": 164.2,
+      "pm10": 276.1
+    },
+    {
+      "timestamp": "2025-12-29T23:00:00",
+      "actual_aqi": 331,
+      "actual_category": "Very Poor",
+      "pm25": 159.8,
+      "pm10": 262.1
+    },
+    {
+      "timestamp": "2025-12-30T00:00:00",
+      "actual_aqi": 338,
+      "actual_category": "Very Poor",
+      "pm25": 168.0,
+      "pm10": 296.7
+    },
+    {
+      "timestamp": "2025-12-30T01:00:00",
+      "actual_aqi": 342,
+      "actual_category": "Very Poor",
+      "pm25": 173.3,
+      "pm10": 346.7
+    },
+    {
+      "timestamp": "2025-12-30T02:00:00",
+      "actual_aqi": 362,
+      "actual_category": "Very Poor",
+      "pm25": 200.8,
+      "pm10": 357.9
+    },
+    {
+      "timestamp": "2025-12-30T03:00:00",
+      "actual_aqi": 377,
+      "actual_category": "Very Poor",
+      "pm25": 220.1,
+      "pm10": 404.2
+    },
+    {
+      "timestamp": "2025-12-30T04:00:00",
+      "actual_aqi": 413,
+      "actual_category": "Severe",
+      "pm25": 229.0,
+      "pm10": 440.1
+    },
+    {
+      "timestamp": "2025-12-30T05:00:00",
+      "actual_aqi": 374,
+      "actual_category": "Very Poor",
+      "pm25": 215.9,
+      "pm10": 350.4
+    },
+    {
+      "timestamp": "2025-12-30T06:00:00",
+      "actual_aqi": 358,
+      "actual_category": "Very Poor",
+      "pm25": 195.0,
+      "pm10": 280.1
+    },
+    {
+      "timestamp": "2025-12-30T07:00:00",
+      "actual_aqi": 330,
+      "actual_category": "Very Poor",
+      "pm25": 158.7,
+      "pm10": 262.3
+    },
+    {
+      "timestamp": "2025-12-30T08:00:00",
+      "actual_aqi": 320,
+      "actual_category": "Very Poor",
+      "pm25": 145.8,
+      "pm10": 225.9
+    },
+    {
+      "timestamp": "2025-12-30T09:00:00",
+      "actual_aqi": 323,
+      "actual_category": "Very Poor",
+      "pm25": 149.2,
+      "pm10": 243.3
+    },
+    {
+      "timestamp": "2025-12-30T10:00:00",
+      "actual_aqi": 328,
+      "actual_category": "Very Poor",
+      "pm25": 154.9,
+      "pm10": 286.0
+    },
+    {
+      "timestamp": "2025-12-30T11:00:00",
+      "actual_aqi": 336,
+      "actual_category": "Very Poor",
+      "pm25": 165.3,
+      "pm10": 307.9
+    },
+    {
+      "timestamp": "2025-12-30T12:00:00",
+      "actual_aqi": 351,
+      "actual_category": "Very Poor",
+      "pm25": 185.8,
+      "pm10": 334.2
+    },
+    {
+      "timestamp": "2025-12-30T13:00:00",
+      "actual_aqi": 367,
+      "actual_category": "Very Poor",
+      "pm25": 206.2,
+      "pm10": 397.0
+    },
+    {
+      "timestamp": "2025-12-30T14:00:00",
+      "actual_aqi": 394,
+      "actual_category": "Very Poor",
+      "pm25": 209.7,
+      "pm10": 425.4
+    },
+    {
+      "timestamp": "2025-12-30T15:00:00",
+      "actual_aqi": 351,
+      "actual_category": "Very Poor",
+      "pm25": 185.1,
+      "pm10": 357.5
+    },
+    {
+      "timestamp": "2025-12-30T16:00:00",
+      "actual_aqi": 326,
+      "actual_category": "Very Poor",
+      "pm25": 153.3,
+      "pm10": 270.8
+    },
+    {
+      "timestamp": "2025-12-30T17:00:00",
+      "actual_aqi": 310,
+      "actual_category": "Very Poor",
+      "pm25": 132.0,
+      "pm10": 232.5
+    },
+    {
+      "timestamp": "2025-12-30T18:00:00",
+      "actual_aqi": 304,
+      "actual_category": "Very Poor",
+      "pm25": 123.7,
+      "pm10": 247.9
+    },
+    {
+      "timestamp": "2025-12-30T19:00:00",
+      "actual_aqi": 308,
+      "actual_category": "Very Poor",
+      "pm25": 128.9,
+      "pm10": 283.3
+    },
+    {
+      "timestamp": "2025-12-30T20:00:00",
+      "actual_aqi": 343,
+      "actual_category": "Very Poor",
+      "pm25": 175.2,
+      "pm10": 335.5
+    },
+    {
+      "timestamp": "2025-12-30T21:00:00",
+      "actual_aqi": 387,
+      "actual_category": "Very Poor",
+      "pm25": 233.2,
+      "pm10": 393.4
+    },
+    {
+      "timestamp": "2025-12-30T22:00:00",
+      "actual_aqi": 426,
+      "actual_category": "Severe",
+      "pm25": 253.3,
+      "pm10": 450.2
+    },
+    {
+      "timestamp": "2025-12-30T23:00:00",
+      "actual_aqi": 455,
+      "actual_category": "Severe",
+      "pm25": 281.5,
+      "pm10": 473.7
+    },
+    {
+      "timestamp": "2025-12-31T00:00:00",
+      "actual_aqi": 434,
+      "actual_category": "Severe",
+      "pm25": 255.0,
+      "pm10": 457.1
+    },
+    {
+      "timestamp": "2025-12-31T01:00:00",
+      "actual_aqi": 399,
+      "actual_category": "Very Poor",
+      "pm25": 230.2,
+      "pm10": 429.2
+    },
+    {
+      "timestamp": "2025-12-31T02:00:00",
+      "actual_aqi": 352,
+      "actual_category": "Very Poor",
+      "pm25": 186.9,
+      "pm10": 299.1
+    },
+    {
+      "timestamp": "2025-12-31T03:00:00",
+      "actual_aqi": 333,
+      "actual_category": "Very Poor",
+      "pm25": 161.8,
+      "pm10": 239.5
+    },
+    {
+      "timestamp": "2025-12-31T04:00:00",
+      "actual_aqi": 324,
+      "actual_category": "Very Poor",
+      "pm25": 149.8,
+      "pm10": 238.2
+    },
+    {
+      "timestamp": "2025-12-31T05:00:00",
+      "actual_aqi": 302,
+      "actual_category": "Very Poor",
+      "pm25": 121.0,
+      "pm10": 157.3
+    },
+    {
+      "timestamp": "2025-12-31T06:00:00",
+      "actual_aqi": 268,
+      "actual_category": "Poor",
+      "pm25": 110.5,
+      "pm10": 140.3
+    },
+    {
+      "timestamp": "2025-12-31T07:00:00",
+      "actual_aqi": 270,
+      "actual_category": "Poor",
+      "pm25": 110.9,
+      "pm10": 206.9
+    },
+    {
+      "timestamp": "2025-12-31T08:00:00",
+      "actual_aqi": 291,
+      "actual_category": "Poor",
+      "pm25": 117.2,
+      "pm10": 214.3
+    },
+    {
+      "timestamp": "2025-12-31T09:00:00",
+      "actual_aqi": 243,
+      "actual_category": "Poor",
+      "pm25": 102.8,
+      "pm10": 179.6
+    },
+    {
+      "timestamp": "2025-12-31T10:00:00",
+      "actual_aqi": 245,
+      "actual_category": "Poor",
+      "pm25": 103.4,
+      "pm10": 197.4
+    },
+    {
+      "timestamp": "2025-12-31T11:00:00",
+      "actual_aqi": 262,
+      "actual_category": "Poor",
+      "pm25": 108.7,
+      "pm10": 197.7
+    },
+    {
+      "timestamp": "2025-12-31T12:00:00",
+      "actual_aqi": 282,
+      "actual_category": "Poor",
+      "pm25": 114.5,
+      "pm10": 194.8
+    },
+    {
+      "timestamp": "2025-12-31T13:00:00",
+      "actual_aqi": 286,
+      "actual_category": "Poor",
+      "pm25": 115.8,
+      "pm10": 204.5
+    },
+    {
+      "timestamp": "2025-12-31T14:00:00",
+      "actual_aqi": 288,
+      "actual_category": "Poor",
+      "pm25": 116.3,
+      "pm10": 217.0
+    },
+    {
+      "timestamp": "2025-12-31T15:00:00",
+      "actual_aqi": 302,
+      "actual_category": "Very Poor",
+      "pm25": 121.6,
+      "pm10": 241.8
+    },
+    {
+      "timestamp": "2025-12-31T16:00:00",
+      "actual_aqi": 284,
+      "actual_category": "Poor",
+      "pm25": 115.0,
+      "pm10": 254.8
+    },
+    {
+      "timestamp": "2025-12-31T17:00:00",
+      "actual_aqi": 314,
+      "actual_category": "Very Poor",
+      "pm25": 136.6,
+      "pm10": 268.9
+    },
+    {
+      "timestamp": "2025-12-31T18:00:00",
+      "actual_aqi": 327,
+      "actual_category": "Very Poor",
+      "pm25": 154.0,
+      "pm10": 283.7
+    },
+    {
+      "timestamp": "2025-12-31T19:00:00",
+      "actual_aqi": 332,
+      "actual_category": "Very Poor",
+      "pm25": 161.0,
+      "pm10": 295.2
+    },
+    {
+      "timestamp": "2025-12-31T20:00:00",
+      "actual_aqi": 349,
+      "actual_category": "Very Poor",
+      "pm25": 183.3,
+      "pm10": 323.4
+    },
+    {
+      "timestamp": "2025-12-31T21:00:00",
+      "actual_aqi": 371,
+      "actual_category": "Very Poor",
+      "pm25": 211.5,
+      "pm10": 354.6
+    },
+    {
+      "timestamp": "2025-12-31T22:00:00",
+      "actual_aqi": 364,
+      "actual_category": "Very Poor",
+      "pm25": 203.1,
+      "pm10": 347.8
+    },
+    {
+      "timestamp": "2025-12-31T23:00:00",
+      "actual_aqi": 356,
+      "actual_category": "Very Poor",
+      "pm25": 191.8,
+      "pm10": 332.5
+    }
+  ]
+}

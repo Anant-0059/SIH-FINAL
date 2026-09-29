@@ -1,0 +1,596 @@
+{
+  "pollutants": {
+    "pm25": {
+      "Ridge": {
+        "mae": 12.54,
+        "rmse": 23.96,
+        "r2": 0.9083,
+        "test_samples": 3035
+      },
+      "RandomForest": {
+        "mae": 14.18,
+        "rmse": 24.82,
+        "r2": 0.9016,
+        "test_samples": 3035
+      },
+      "GradientBoosting": {
+        "mae": 13.16,
+        "rmse": 24.11,
+        "r2": 0.9071,
+        "test_samples": 3035
+      }
+    },
+    "pm10": {
+      "Ridge": {
+        "mae": 15.65,
+        "rmse": 28.17,
+        "r2": 0.9523,
+        "test_samples": 3063
+      },
+      "RandomForest": {
+        "mae": 14.99,
+        "rmse": 28.51,
+        "r2": 0.9511,
+        "test_samples": 3063
+      },
+      "GradientBoosting": {
+        "mae": 14.53,
+        "rmse": 27.05,
+        "r2": 0.956,
+        "test_samples": 3063
+      }
+    },
+    "no2": {
+      "Ridge": {
+        "mae": 4.26,
+        "rmse": 8.96,
+        "r2": 0.8241,
+        "test_samples": 3128
+      },
+      "RandomForest": {
+        "mae": 7.56,
+        "rmse": 15.06,
+        "r2": 0.5036,
+        "test_samples": 3128
+      },
+      "GradientBoosting": {
+        "mae": 6.54,
+        "rmse": 14.29,
+        "r2": 0.5533,
+        "test_samples": 3128
+      }
+    },
+    "so2": {
+      "Ridge": {
+        "mae": 1.78,
+        "rmse": 3.08,
+        "r2": 0.7634,
+        "test_samples": 3203
+      },
+      "RandomForest": {
+        "mae": 1.83,
+        "rmse": 3.2,
+        "r2": 0.7449,
+        "test_samples": 3203
+      },
+      "GradientBoosting": {
+        "mae": 1.68,
+        "rmse": 3.16,
+        "r2": 0.7517,
+        "test_samples": 3203
+      }
+    },
+    "co": {
+      "Ridge": {
+        "mae": 0.17,
+        "rmse": 0.23,
+        "r2": 0.7785,
+        "test_samples": 3209
+      },
+      "RandomForest": {
+        "mae": 0.21,
+        "rmse": 0.32,
+        "r2": 0.5793,
+        "test_samples": 3209
+      },
+      "GradientBoosting": {
+        "mae": 0.18,
+        "rmse": 0.26,
+        "r2": 0.7246,
+        "test_samples": 3209
+      }
+    },
+    "o3": {
+      "Ridge": {
+        "mae": 2.67,
+        "rmse": 5.49,
+        "r2": 0.7962,
+        "test_samples": 3210
+      },
+      "RandomForest": {
+        "mae": 2.98,
+        "rmse": 5.8,
+        "r2": 0.773,
+        "test_samples": 3210
+      },
+      "GradientBoosting": {
+        "mae": 2.91,
+        "rmse": 5.75,
+        "r2": 0.777,
+        "test_samples": 3210
+      }
+    },
+    "nh3": {
+      "Ridge": {
+        "mae": 1.9,
+        "rmse": 3.45,
+        "r2": 0.957,
+        "test_samples": 3133
+      },
+      "RandomForest": {
+        "mae": 2.98,
+        "rmse": 4.71,
+        "r2": 0.9196,
+        "test_samples": 3133
+      },
+      "GradientBoosting": {
+        "mae": 3.04,
+        "rmse": 5.21,
+        "r2": 0.9016,
+        "test_samples": 3133
+      }
+    }
+  },
+  "composite_aqi": {
+    "Ridge": {
+      "aqi_mae": 17.35,
+      "aqi_rmse": 29.28,
+      "aqi_r2": 0.9487,
+      "category_accuracy_pct": 83.29,
+      "evaluated_timesteps": 3035
+    },
+    "RandomForest": {
+      "aqi_mae": 19.99,
+      "aqi_rmse": 32.17,
+      "aqi_r2": 0.9381,
+      "category_accuracy_pct": 79.41,
+      "evaluated_timesteps": 3035
+    },
+    "GradientBoosting": {
+      "aqi_mae": 17.91,
+      "aqi_rmse": 29.45,
+      "aqi_r2": 0.9481,
+      "category_accuracy_pct": 82.17,
+      "evaluated_timesteps": 3035
+    }
+  },
+  "split_method": "Chronological 80/20 Time-Series Split (No Shuffling)",
+  "engineered_features": [
+    "hour",
+    "dayofweek",
+    "month",
+    "dayofyear",
+    "hour_sin",
+    "hour_cos",
+    "doy_sin",
+    "doy_cos",
+    "lag_1",
+    "lag_3",
+    "lag_6",
+    "lag_12",
+    "lag_24",
+    "roll6_mean",
+    "roll6_std",
+    "roll24_mean",
+    "roll24_std",
+    "temp",
+    "humidity",
+    "wind_speed"
+  ],
+  "scientific_upgrade": {
+    "provenance": {
+      "model_version": "v2.4-scientific-ensemble-cpcb",
+      "model_name": "Direct Multi-Horizon LightGBM/HistGBM + ExtraTrees + RandomForest Log1p Ensemble",
+      "training_timestamp": "2026-09-22T23:14:39.435275",
+      "training_data_start": "2024-01-01 00:00:00",
+      "training_data_end": "2025-05-26 15:00:00",
+      "validation_period": "2025-05-26 16:00:00 to 2025-09-13 07:00:00",
+      "unseen_test_period": "2025-09-13 08:00:00 to 2025-12-31 23:00:00",
+      "leakage_audit_status": "PASSED - Strictly causal shifts (<= T), zero bfill(), walk-forward split",
+      "elapsed_seconds": 109.2
+    },
+    "aqi_multi_horizon": {
+      "6h": {
+        "horizon_band": "1-6h",
+        "persistence_aqi_mae": 55.28,
+        "previous_model_aqi_mae": 53.57,
+        "previous_category_accuracy_pct": 54.0,
+        "scientific_ensemble_aqi_mae": 52.74,
+        "scientific_ensemble_aqi_rmse": 74.83,
+        "scientific_ensemble_aqi_r2": 0.5988,
+        "category_accuracy_pct": 55.7,
+        "dominant_pollutant_accuracy_pct": 71.7,
+        "high_aqi_recall_pct": 89.0,
+        "peak_prediction_mae": 65.34
+      },
+      "12h": {
+        "horizon_band": "7-12h",
+        "persistence_aqi_mae": 65.98,
+        "previous_model_aqi_mae": 59.28,
+        "previous_category_accuracy_pct": 48.3,
+        "scientific_ensemble_aqi_mae": 53.68,
+        "scientific_ensemble_aqi_rmse": 76.06,
+        "scientific_ensemble_aqi_r2": 0.5779,
+        "category_accuracy_pct": 56.2,
+        "dominant_pollutant_accuracy_pct": 74.7,
+        "high_aqi_recall_pct": 88.9,
+        "peak_prediction_mae": 65.96
+      },
+      "24h": {
+        "horizon_band": "13-24h",
+        "persistence_aqi_mae": 59.64,
+        "previous_model_aqi_mae": 60.92,
+        "previous_category_accuracy_pct": 50.0,
+        "scientific_ensemble_aqi_mae": 59.23,
+        "scientific_ensemble_aqi_rmse": 82.97,
+        "scientific_ensemble_aqi_r2": 0.492,
+        "category_accuracy_pct": 50.8,
+        "dominant_pollutant_accuracy_pct": 70.5,
+        "high_aqi_recall_pct": 87.2,
+        "peak_prediction_mae": 72.21
+      },
+      "48h": {
+        "horizon_band": "25-48h",
+        "persistence_aqi_mae": 73.76,
+        "previous_model_aqi_mae": 70.0,
+        "previous_category_accuracy_pct": 42.2,
+        "scientific_ensemble_aqi_mae": 71.45,
+        "scientific_ensemble_aqi_rmse": 97.58,
+        "scientific_ensemble_aqi_r2": 0.3031,
+        "category_accuracy_pct": 38.5,
+        "dominant_pollutant_accuracy_pct": 61.7,
+        "high_aqi_recall_pct": 76.8,
+        "peak_prediction_mae": 91.47
+      },
+      "72h": {
+        "horizon_band": "49-72h",
+        "persistence_aqi_mae": 70.48,
+        "previous_model_aqi_mae": 75.26,
+        "previous_category_accuracy_pct": 35.2,
+        "scientific_ensemble_aqi_mae": 70.49,
+        "scientific_ensemble_aqi_rmse": 95.43,
+        "scientific_ensemble_aqi_r2": 0.3092,
+        "category_accuracy_pct": 43.0,
+        "dominant_pollutant_accuracy_pct": 65.3,
+        "high_aqi_recall_pct": 83.8,
+        "peak_prediction_mae": 86.55
+      }
+    },
+    "comparison_table": [
+      {
+        "pollutant": "PM25",
+        "horizon": "24h",
+        "persistence_mae": 48.65,
+        "seasonal_mae": 56.17,
+        "current_model_mae": 49.91,
+        "improved_model_mae": 45.63,
+        "improved_rmse": 75.87,
+        "improved_r2": 0.1584,
+        "improvement_vs_current_pct": 8.6,
+        "best_model_architecture": "Ensemble (GradientBoost_Shallow + LightGBM_HistGBM)"
+      },
+      {
+        "pollutant": "PM25",
+        "horizon": "48h",
+        "persistence_mae": 56.64,
+        "seasonal_mae": 55.34,
+        "current_model_mae": 57.16,
+        "improved_model_mae": 49.9,
+        "improved_rmse": 82.27,
+        "improved_r2": 0.0094,
+        "improvement_vs_current_pct": 12.7,
+        "best_model_architecture": "Ensemble (Ridge + ExtraTrees)"
+      },
+      {
+        "pollutant": "PM25",
+        "horizon": "72h",
+        "persistence_mae": 55.79,
+        "seasonal_mae": 57.9,
+        "current_model_mae": 59.04,
+        "improved_model_mae": 54.38,
+        "improved_rmse": 85.58,
+        "improved_r2": -0.0739,
+        "improvement_vs_current_pct": 7.9,
+        "best_model_architecture": "Ensemble (Ridge + ExtraTrees)"
+      },
+      {
+        "pollutant": "PM10",
+        "horizon": "24h",
+        "persistence_mae": 60.58,
+        "seasonal_mae": 69.23,
+        "current_model_mae": 57.76,
+        "improved_model_mae": 56.17,
+        "improved_rmse": 81.29,
+        "improved_r2": 0.5304,
+        "improvement_vs_current_pct": 2.8,
+        "best_model_architecture": "Ensemble (ExtraTrees + Ridge)"
+      },
+      {
+        "pollutant": "PM10",
+        "horizon": "48h",
+        "persistence_mae": 69.77,
+        "seasonal_mae": 72.65,
+        "current_model_mae": 65.31,
+        "improved_model_mae": 61.75,
+        "improved_rmse": 86.6,
+        "improved_r2": 0.4606,
+        "improvement_vs_current_pct": 5.5,
+        "best_model_architecture": "Ensemble (ExtraTrees + Ridge)"
+      },
+      {
+        "pollutant": "PM10",
+        "horizon": "72h",
+        "persistence_mae": 73.22,
+        "seasonal_mae": 70.21,
+        "current_model_mae": 72.28,
+        "improved_model_mae": 64.27,
+        "improved_rmse": 90.06,
+        "improved_r2": 0.4083,
+        "improvement_vs_current_pct": 11.1,
+        "best_model_architecture": "Ensemble (Ridge + ExtraTrees)"
+      },
+      {
+        "pollutant": "O3",
+        "horizon": "24h",
+        "persistence_mae": 3.93,
+        "seasonal_mae": 5.16,
+        "current_model_mae": 5.47,
+        "improved_model_mae": 5.61,
+        "improved_rmse": 9.67,
+        "improved_r2": 0.5293,
+        "improvement_vs_current_pct": -2.6,
+        "best_model_architecture": "Ensemble (ExtraTrees + GradientBoost_Shallow)"
+      },
+      {
+        "pollutant": "O3",
+        "horizon": "48h",
+        "persistence_mae": 5.17,
+        "seasonal_mae": 5.98,
+        "current_model_mae": 6.68,
+        "improved_model_mae": 6.81,
+        "improved_rmse": 10.87,
+        "improved_r2": 0.4107,
+        "improvement_vs_current_pct": -1.9,
+        "best_model_architecture": "Ensemble (ExtraTrees + GradientBoost_Shallow)"
+      },
+      {
+        "pollutant": "O3",
+        "horizon": "72h",
+        "persistence_mae": 6.02,
+        "seasonal_mae": 6.74,
+        "current_model_mae": 7.33,
+        "improved_model_mae": 7.28,
+        "improved_rmse": 11.36,
+        "improved_r2": 0.3604,
+        "improvement_vs_current_pct": 0.7,
+        "best_model_architecture": "Ensemble (ExtraTrees + LightGBM_HistGBM)"
+      },
+      {
+        "pollutant": "NO2",
+        "horizon": "24h",
+        "persistence_mae": 7.34,
+        "seasonal_mae": 9.09,
+        "current_model_mae": 11.34,
+        "improved_model_mae": 13.1,
+        "improved_rmse": 20.72,
+        "improved_r2": 0.1464,
+        "improvement_vs_current_pct": -15.5,
+        "best_model_architecture": "Ensemble (GradientBoost_Shallow + ExtraTrees)"
+      },
+      {
+        "pollutant": "NO2",
+        "horizon": "48h",
+        "persistence_mae": 9.13,
+        "seasonal_mae": 9.99,
+        "current_model_mae": 15.91,
+        "improved_model_mae": 16.44,
+        "improved_rmse": 25.4,
+        "improved_r2": -0.279,
+        "improvement_vs_current_pct": -3.3,
+        "best_model_architecture": "Ensemble (GradientBoost_Shallow + LightGBM_HistGBM)"
+      },
+      {
+        "pollutant": "NO2",
+        "horizon": "72h",
+        "persistence_mae": 10.07,
+        "seasonal_mae": 11.19,
+        "current_model_mae": 18.36,
+        "improved_model_mae": 19.89,
+        "improved_rmse": 29.6,
+        "improved_r2": -0.7296,
+        "improvement_vs_current_pct": -8.3,
+        "best_model_architecture": "Ensemble (GradientBoost_Shallow + LightGBM_HistGBM)"
+      },
+      {
+        "pollutant": "SO2",
+        "horizon": "24h",
+        "persistence_mae": 3.81,
+        "seasonal_mae": 4.34,
+        "current_model_mae": 4.19,
+        "improved_model_mae": 4.48,
+        "improved_rmse": 6.09,
+        "improved_r2": 0.0565,
+        "improvement_vs_current_pct": -6.9,
+        "best_model_architecture": "Ensemble (ElasticNet + ExtraTrees)"
+      },
+      {
+        "pollutant": "SO2",
+        "horizon": "48h",
+        "persistence_mae": 4.36,
+        "seasonal_mae": 4.8,
+        "current_model_mae": 7.59,
+        "improved_model_mae": 5.35,
+        "improved_rmse": 7.12,
+        "improved_r2": -0.2823,
+        "improvement_vs_current_pct": 29.5,
+        "best_model_architecture": "Ensemble (ExtraTrees + ElasticNet)"
+      },
+      {
+        "pollutant": "SO2",
+        "horizon": "72h",
+        "persistence_mae": 4.83,
+        "seasonal_mae": 5.37,
+        "current_model_mae": 6.32,
+        "improved_model_mae": 5.85,
+        "improved_rmse": 7.7,
+        "improved_r2": -0.4863,
+        "improvement_vs_current_pct": 7.4,
+        "best_model_architecture": "Ensemble (ElasticNet + ExtraTrees)"
+      },
+      {
+        "pollutant": "CO",
+        "horizon": "24h",
+        "persistence_mae": 0.28,
+        "seasonal_mae": 0.32,
+        "current_model_mae": 0.3,
+        "improved_model_mae": 0.3,
+        "improved_rmse": 0.38,
+        "improved_r2": 0.2892,
+        "improvement_vs_current_pct": 0.0,
+        "best_model_architecture": "Ensemble (GradientBoost_Shallow + Ridge)"
+      },
+      {
+        "pollutant": "CO",
+        "horizon": "48h",
+        "persistence_mae": 0.32,
+        "seasonal_mae": 0.35,
+        "current_model_mae": 0.36,
+        "improved_model_mae": 0.35,
+        "improved_rmse": 0.43,
+        "improved_r2": 0.0337,
+        "improvement_vs_current_pct": 2.8,
+        "best_model_architecture": "Ensemble (ElasticNet + Ridge)"
+      },
+      {
+        "pollutant": "CO",
+        "horizon": "72h",
+        "persistence_mae": 0.35,
+        "seasonal_mae": 0.35,
+        "current_model_mae": 0.37,
+        "improved_model_mae": 0.36,
+        "improved_rmse": 0.45,
+        "improved_r2": -0.0893,
+        "improvement_vs_current_pct": 2.7,
+        "best_model_architecture": "Ensemble (ElasticNet + Ridge)"
+      },
+      {
+        "pollutant": "NH3",
+        "horizon": "24h",
+        "persistence_mae": 3.41,
+        "seasonal_mae": 3.83,
+        "current_model_mae": 5.35,
+        "improved_model_mae": 5.24,
+        "improved_rmse": 8.33,
+        "improved_r2": 0.7784,
+        "improvement_vs_current_pct": 2.1,
+        "best_model_architecture": "Ensemble (ElasticNet + ExtraTrees)"
+      },
+      {
+        "pollutant": "NH3",
+        "horizon": "48h",
+        "persistence_mae": 3.84,
+        "seasonal_mae": 4.24,
+        "current_model_mae": 5.49,
+        "improved_model_mae": 5.43,
+        "improved_rmse": 9.31,
+        "improved_r2": 0.723,
+        "improvement_vs_current_pct": 1.1,
+        "best_model_architecture": "Ensemble (GradientBoost_Shallow + LightGBM_HistGBM)"
+      },
+      {
+        "pollutant": "NH3",
+        "horizon": "72h",
+        "persistence_mae": 4.27,
+        "seasonal_mae": 4.41,
+        "current_model_mae": 9.21,
+        "improved_model_mae": 7.53,
+        "improved_rmse": 10.46,
+        "improved_r2": 0.6504,
+        "improvement_vs_current_pct": 18.2,
+        "best_model_architecture": "Ensemble (ElasticNet + ExtraTrees)"
+      }
+    ],
+    "ablation_study": [
+      {
+        "group": "A",
+        "description": "A. Pollution History Only (Lags 1-72h, Rolling Stats, Cross-Pollutants)",
+        "mae_24h": 48.74,
+        "r2_24h": 0.0223,
+        "mae_48h": 51.01,
+        "r2_48h": -0.0419,
+        "mae_72h": 48.84,
+        "r2_72h": 0.0234
+      },
+      {
+        "group": "B",
+        "description": "B. Pollution + Cyclical Calendar & Seasonality",
+        "mae_24h": 50.85,
+        "r2_24h": 0.0137,
+        "mae_48h": 52.87,
+        "r2_48h": -0.0041,
+        "mae_72h": 56.4,
+        "r2_72h": -0.1341
+      },
+      {
+        "group": "C",
+        "description": "C. Pollution + Calendar + Observed Meteorology (T0)",
+        "mae_24h": 49.41,
+        "r2_24h": 0.0788,
+        "mae_48h": 51.45,
+        "r2_48h": 0.0478,
+        "mae_72h": 56.57,
+        "r2_72h": -0.1536
+      },
+      {
+        "group": "D",
+        "description": "D. Pollution + Calendar + Future 72h Forecast Meteorology (T+h)",
+        "mae_24h": 47.92,
+        "r2_24h": 0.1005,
+        "mae_48h": 52.31,
+        "r2_48h": 0.0067,
+        "mae_72h": 56.18,
+        "r2_72h": -0.1482
+      },
+      {
+        "group": "E",
+        "description": "E. Group D + PBL Height, Ventilation Coefficient & Thermal Inversion",
+        "mae_24h": 48.14,
+        "r2_24h": 0.1041,
+        "mae_48h": 51.76,
+        "r2_48h": 0.0447,
+        "mae_72h": 55.48,
+        "r2_72h": -0.1231
+      },
+      {
+        "group": "F",
+        "description": "F. Group E + Upwind Stubble-Burning Transport Indicators",
+        "mae_24h": 48.14,
+        "r2_24h": 0.1041,
+        "mae_48h": 51.76,
+        "r2_48h": 0.0447,
+        "mae_72h": 55.48,
+        "r2_72h": -0.1231
+      },
+      {
+        "group": "G",
+        "description": "G. Full Scientific Regime-Aware Ensemble (All Features + Interactions)",
+        "mae_24h": 47.59,
+        "r2_24h": 0.1256,
+        "mae_48h": 51.73,
+        "r2_48h": 0.0326,
+        "mae_72h": 55.93,
+        "r2_72h": -0.1183
+      }
+    ]
+  }
+}

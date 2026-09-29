@@ -1,0 +1,98 @@
+{
+  "dataset_name": "CPCB Delhi Ambient Air Quality Dataset (IHBAS, Dilshad Garden)",
+  "station_name": "IHBAS, Dilshad Garden, Delhi - CPCB",
+  "station_id": "site_114",
+  "city": "Delhi",
+  "state": "Delhi",
+  "total_raw_rows": 70177,
+  "total_columns": 30,
+  "valid_rows": 70176,
+  "invalid_or_header_rows": 1,
+  "start_timestamp": "2024-01-01 00:00:00",
+  "end_timestamp": "2025-12-31 23:45:00",
+  "frequency": "15-minute observations",
+  "duplicate_timestamps": 0,
+  "total_calendar_days": 731,
+  "days_sufficient_data": 731,
+  "days_sparse_data": 0,
+  "pollutant_summary": {
+    "PM2.5": {
+      "raw_column": "PM2.5 (ug/m3)",
+      "total_observations": 70176,
+      "missing_count": 7792,
+      "missing_pct": 11.1,
+      "negative_count": 0,
+      "min": 5.0,
+      "max": 889.9,
+      "mean": 75.81,
+      "median": 62.9
+    },
+    "PM10": {
+      "raw_column": "PM10 (ug/m3)",
+      "total_observations": 70176,
+      "missing_count": 7590,
+      "missing_pct": 10.82,
+      "negative_count": 0,
+      "min": 6.2,
+      "max": 940.6,
+      "mean": 166.31,
+      "median": 143.9
+    },
+    "NO2": {
+      "raw_column": "NO2 (ug/m3)",
+      "total_observations": 70176,
+      "missing_count": 7029,
+      "missing_pct": 10.02,
+      "negative_count": 0,
+      "min": 0.01,
+      "max": 469.51,
+      "mean": 38.05,
+      "median": 36.45
+    },
+    "SO2": {
+      "raw_column": "SO2 (ug/m3)",
+      "total_observations": 70176,
+      "missing_count": 8127,
+      "missing_pct": 11.58,
+      "negative_count": 0,
+      "min": 0.2,
+      "max": 198.81,
+      "mean": 14.27,
+      "median": 11.79
+    },
+    "CO": {
+      "raw_column": "CO (mg/m3)",
+      "total_observations": 70176,
+      "missing_count": 9510,
+      "missing_pct": 13.55,
+      "negative_count": 0,
+      "min": 0.0,
+      "max": 9.95,
+      "mean": 1.24,
+      "median": 1.11
+    },
+    "O3": {
+      "raw_column": "Ozone (ug/m3)",
+      "total_observations": 70176,
+      "missing_count": 6046,
+      "missing_pct": 8.62,
+      "negative_count": 0,
+      "min": 0.36,
+      "max": 282.73,
+      "mean": 21.35,
+      "median": 17.66
+    },
+    "NH3": {
+      "raw_column": "NH3 (ug/m3)",
+      "total_observations": 70176,
+      "missing_count": 6873,
+      "missing_pct": 9.79,
+      "negative_count": 0,
+      "min": 0.01,
+      "max": 300.21,
+      "mean": 29.74,
+      "median": 27.24
+    }
+  },
+  "imputation_policy": "No synthetic or fabricated measurements are generated. Missing timestamps in 15-minute intervals are aggregated to hourly averages when at least 2 valid readings exist in that hour. Daily averages are computed from hourly averages with minimum 16 valid hours per day as required by CPCB protocol. For ML lag features, forward-filling of recent valid historical steps is used without future-data leakage."
+}

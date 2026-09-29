@@ -1,0 +1,1740 @@
+{
+  "provenance": {
+    "model_version": "v2.4-scientific-ensemble-cpcb",
+    "model_name": "Direct Multi-Horizon LightGBM/HistGBM + ExtraTrees + RandomForest Log1p Ensemble",
+    "training_timestamp": "2026-09-22T23:14:39.435275",
+    "training_data_start": "2024-01-01 00:00:00",
+    "training_data_end": "2025-05-26 15:00:00",
+    "validation_period": "2025-05-26 16:00:00 to 2025-09-13 07:00:00",
+    "unseen_test_period": "2025-09-13 08:00:00 to 2025-12-31 23:00:00",
+    "leakage_audit_status": "PASSED - Strictly causal shifts (<= T), zero bfill(), walk-forward split",
+    "elapsed_seconds": 109.2
+  },
+  "quality_control": {
+    "initial_rows": 17544,
+    "duplicate_timestamps_removed": 0,
+    "negative_values_clipped": 0,
+    "isolated_sensor_glitches_filtered": 0,
+    "genuine_pollution_episodes_preserved": 244
+  },
+  "aqi_horizon_evaluation": {
+    "6h": {
+      "horizon_band": "1-6h",
+      "persistence_aqi_mae": 55.28,
+      "previous_model_aqi_mae": 53.57,
+      "previous_category_accuracy_pct": 54.0,
+      "scientific_ensemble_aqi_mae": 52.74,
+      "scientific_ensemble_aqi_rmse": 74.83,
+      "scientific_ensemble_aqi_r2": 0.5988,
+      "category_accuracy_pct": 55.7,
+      "dominant_pollutant_accuracy_pct": 71.7,
+      "high_aqi_recall_pct": 89.0,
+      "peak_prediction_mae": 65.34
+    },
+    "12h": {
+      "horizon_band": "7-12h",
+      "persistence_aqi_mae": 65.98,
+      "previous_model_aqi_mae": 59.28,
+      "previous_category_accuracy_pct": 48.3,
+      "scientific_ensemble_aqi_mae": 53.68,
+      "scientific_ensemble_aqi_rmse": 76.06,
+      "scientific_ensemble_aqi_r2": 0.5779,
+      "category_accuracy_pct": 56.2,
+      "dominant_pollutant_accuracy_pct": 74.7,
+      "high_aqi_recall_pct": 88.9,
+      "peak_prediction_mae": 65.96
+    },
+    "24h": {
+      "horizon_band": "13-24h",
+      "persistence_aqi_mae": 59.64,
+      "previous_model_aqi_mae": 60.92,
+      "previous_category_accuracy_pct": 50.0,
+      "scientific_ensemble_aqi_mae": 59.23,
+      "scientific_ensemble_aqi_rmse": 82.97,
+      "scientific_ensemble_aqi_r2": 0.492,
+      "category_accuracy_pct": 50.8,
+      "dominant_pollutant_accuracy_pct": 70.5,
+      "high_aqi_recall_pct": 87.2,
+      "peak_prediction_mae": 72.21
+    },
+    "48h": {
+      "horizon_band": "25-48h",
+      "persistence_aqi_mae": 73.76,
+      "previous_model_aqi_mae": 70.0,
+      "previous_category_accuracy_pct": 42.2,
+      "scientific_ensemble_aqi_mae": 71.45,
+      "scientific_ensemble_aqi_rmse": 97.58,
+      "scientific_ensemble_aqi_r2": 0.3031,
+      "category_accuracy_pct": 38.5,
+      "dominant_pollutant_accuracy_pct": 61.7,
+      "high_aqi_recall_pct": 76.8,
+      "peak_prediction_mae": 91.47
+    },
+    "72h": {
+      "horizon_band": "49-72h",
+      "persistence_aqi_mae": 70.48,
+      "previous_model_aqi_mae": 75.26,
+      "previous_category_accuracy_pct": 35.2,
+      "scientific_ensemble_aqi_mae": 70.49,
+      "scientific_ensemble_aqi_rmse": 95.43,
+      "scientific_ensemble_aqi_r2": 0.3092,
+      "category_accuracy_pct": 43.0,
+      "dominant_pollutant_accuracy_pct": 65.3,
+      "high_aqi_recall_pct": 83.8,
+      "peak_prediction_mae": 86.55
+    }
+  },
+  "pollutant_horizon_metrics": {
+    "pm25": {
+      "6h": {
+        "persistence_mae": 39.74,
+        "seasonal_persistence_mae": 48.37,
+        "previous_model_mae": 39.29,
+        "improved_ensemble_mae": 37.32,
+        "improved_ensemble_rmse": 63.77,
+        "improved_ensemble_r2": 0.4052,
+        "correlation": 0.6581,
+        "high_pollution_recall_pct": 28.7,
+        "peak_magnitude_mae": 112.71,
+        "q80_interval_width": 13.35,
+        "q90_interval_width": 23.33,
+        "best_models": [
+          "GradientBoost_Shallow",
+          "LightGBM_HistGBM",
+          "ExtraTrees"
+        ],
+        "ensemble_weights": [
+          0.342,
+          0.339,
+          0.319
+        ]
+      },
+      "12h": {
+        "persistence_mae": 47.4,
+        "seasonal_persistence_mae": 48.48,
+        "previous_model_mae": 45.37,
+        "improved_ensemble_mae": 40.95,
+        "improved_ensemble_rmse": 69.3,
+        "improved_ensemble_r2": 0.2974,
+        "correlation": 0.5764,
+        "high_pollution_recall_pct": 12.5,
+        "peak_magnitude_mae": 127.0,
+        "q80_interval_width": 14.46,
+        "q90_interval_width": 22.37,
+        "best_models": [
+          "LightGBM_HistGBM",
+          "GradientBoost_Shallow",
+          "ExtraTrees"
+        ],
+        "ensemble_weights": [
+          0.34,
+          0.335,
+          0.325
+        ]
+      },
+      "24h": {
+        "persistence_mae": 48.65,
+        "seasonal_persistence_mae": 56.17,
+        "previous_model_mae": 49.91,
+        "improved_ensemble_mae": 45.63,
+        "improved_ensemble_rmse": 75.87,
+        "improved_ensemble_r2": 0.1584,
+        "correlation": 0.4666,
+        "high_pollution_recall_pct": 6.6,
+        "peak_magnitude_mae": 145.21,
+        "q80_interval_width": 15.16,
+        "q90_interval_width": 23.06,
+        "best_models": [
+          "GradientBoost_Shallow",
+          "LightGBM_HistGBM",
+          "Ridge"
+        ],
+        "ensemble_weights": [
+          0.34,
+          0.334,
+          0.325
+        ]
+      },
+      "48h": {
+        "persistence_mae": 56.64,
+        "seasonal_persistence_mae": 55.34,
+        "previous_model_mae": 57.16,
+        "improved_ensemble_mae": 49.9,
+        "improved_ensemble_rmse": 82.27,
+        "improved_ensemble_r2": 0.0094,
+        "correlation": 0.3948,
+        "high_pollution_recall_pct": 1.5,
+        "peak_magnitude_mae": 168.34,
+        "q80_interval_width": 15.93,
+        "q90_interval_width": 24.11,
+        "best_models": [
+          "Ridge",
+          "ExtraTrees",
+          "GradientBoost_Shallow"
+        ],
+        "ensemble_weights": [
+          0.364,
+          0.32,
+          0.316
+        ]
+      },
+      "72h": {
+        "persistence_mae": 55.79,
+        "seasonal_persistence_mae": 57.9,
+        "previous_model_mae": 59.04,
+        "improved_ensemble_mae": 54.38,
+        "improved_ensemble_rmse": 85.58,
+        "improved_ensemble_r2": -0.0739,
+        "correlation": 0.2519,
+        "high_pollution_recall_pct": 3.6,
+        "peak_magnitude_mae": 166.17,
+        "q80_interval_width": 15.13,
+        "q90_interval_width": 23.74,
+        "best_models": [
+          "Ridge",
+          "ExtraTrees",
+          "GradientBoost_Shallow"
+        ],
+        "ensemble_weights": [
+          0.349,
+          0.332,
+          0.319
+        ]
+      }
+    },
+    "pm10": {
+      "6h": {
+        "persistence_mae": 59.29,
+        "seasonal_persistence_mae": 60.29,
+        "previous_model_mae": 51.69,
+        "improved_ensemble_mae": 48.73,
+        "improved_ensemble_rmse": 73.09,
+        "improved_ensemble_r2": 0.623,
+        "correlation": 0.8057,
+        "high_pollution_recall_pct": 9.9,
+        "peak_magnitude_mae": 126.73,
+        "q80_interval_width": 23.96,
+        "q90_interval_width": 34.16,
+        "best_models": [
+          "GradientBoost_Shallow",
+          "ExtraTrees",
+          "LightGBM_HistGBM"
+        ],
+        "ensemble_weights": [
+          0.34,
+          0.333,
+          0.327
+        ]
+      },
+      "12h": {
+        "persistence_mae": 69.49,
+        "seasonal_persistence_mae": 60.41,
+        "previous_model_mae": 55.32,
+        "improved_ensemble_mae": 50.97,
+        "improved_ensemble_rmse": 75.53,
+        "improved_ensemble_r2": 0.5961,
+        "correlation": 0.7913,
+        "high_pollution_recall_pct": 12.2,
+        "peak_magnitude_mae": 130.16,
+        "q80_interval_width": 26.74,
+        "q90_interval_width": 37.74,
+        "best_models": [
+          "ExtraTrees",
+          "GradientBoost_Shallow",
+          "Ridge"
+        ],
+        "ensemble_weights": [
+          0.351,
+          0.328,
+          0.321
+        ]
+      },
+      "24h": {
+        "persistence_mae": 60.58,
+        "seasonal_persistence_mae": 69.23,
+        "previous_model_mae": 57.76,
+        "improved_ensemble_mae": 56.17,
+        "improved_ensemble_rmse": 81.29,
+        "improved_ensemble_r2": 0.5304,
+        "correlation": 0.7472,
+        "high_pollution_recall_pct": 18.4,
+        "peak_magnitude_mae": 135.56,
+        "q80_interval_width": 29.76,
+        "q90_interval_width": 40.12,
+        "best_models": [
+          "ExtraTrees",
+          "Ridge",
+          "GradientBoost_Shallow"
+        ],
+        "ensemble_weights": [
+          0.353,
+          0.349,
+          0.298
+        ]
+      },
+      "48h": {
+        "persistence_mae": 69.77,
+        "seasonal_persistence_mae": 72.65,
+        "previous_model_mae": 65.31,
+        "improved_ensemble_mae": 61.75,
+        "improved_ensemble_rmse": 86.6,
+        "improved_ensemble_r2": 0.4606,
+        "correlation": 0.6968,
+        "high_pollution_recall_pct": 16.0,
+        "peak_magnitude_mae": 145.78,
+        "q80_interval_width": 31.28,
+        "q90_interval_width": 42.2,
+        "best_models": [
+          "ExtraTrees",
+          "Ridge",
+          "GradientBoost_Shallow"
+        ],
+        "ensemble_weights": [
+          0.358,
+          0.336,
+          0.306
+        ]
+      },
+      "72h": {
+        "persistence_mae": 73.22,
+        "seasonal_persistence_mae": 70.21,
+        "previous_model_mae": 72.28,
+        "improved_ensemble_mae": 64.27,
+        "improved_ensemble_rmse": 90.06,
+        "improved_ensemble_r2": 0.4083,
+        "correlation": 0.6614,
+        "high_pollution_recall_pct": 21.4,
+        "peak_magnitude_mae": 147.06,
+        "q80_interval_width": 33.86,
+        "q90_interval_width": 45.88,
+        "best_models": [
+          "Ridge",
+          "ExtraTrees",
+          "ElasticNet"
+        ],
+        "ensemble_weights": [
+          0.353,
+          0.325,
+          0.322
+        ]
+      }
+    },
+    "o3": {
+      "6h": {
+        "persistence_mae": 9.68,
+        "seasonal_persistence_mae": 3.92,
+        "previous_model_mae": 5.84,
+        "improved_ensemble_mae": 4.95,
+        "improved_ensemble_rmse": 8.81,
+        "improved_ensemble_r2": 0.6073,
+        "correlation": 0.8328,
+        "high_pollution_recall_pct": 64.5,
+        "peak_magnitude_mae": 15.74,
+        "q80_interval_width": 6.68,
+        "q90_interval_width": 11.06,
+        "best_models": [
+          "GradientBoost_Shallow",
+          "ExtraTrees",
+          "LightGBM_HistGBM"
+        ],
+        "ensemble_weights": [
+          0.338,
+          0.331,
+          0.331
+        ]
+      },
+      "12h": {
+        "persistence_mae": 11.62,
+        "seasonal_persistence_mae": 3.93,
+        "previous_model_mae": 6.11,
+        "improved_ensemble_mae": 5.52,
+        "improved_ensemble_rmse": 9.4,
+        "improved_ensemble_r2": 0.5536,
+        "correlation": 0.7898,
+        "high_pollution_recall_pct": 62.6,
+        "peak_magnitude_mae": 16.49,
+        "q80_interval_width": 6.71,
+        "q90_interval_width": 11.46,
+        "best_models": [
+          "GradientBoost_Shallow",
+          "ExtraTrees",
+          "LightGBM_HistGBM"
+        ],
+        "ensemble_weights": [
+          0.338,
+          0.336,
+          0.325
+        ]
+      },
+      "24h": {
+        "persistence_mae": 3.93,
+        "seasonal_persistence_mae": 5.16,
+        "previous_model_mae": 5.47,
+        "improved_ensemble_mae": 5.61,
+        "improved_ensemble_rmse": 9.67,
+        "improved_ensemble_r2": 0.5293,
+        "correlation": 0.7692,
+        "high_pollution_recall_pct": 67.6,
+        "peak_magnitude_mae": 17.19,
+        "q80_interval_width": 6.7,
+        "q90_interval_width": 11.81,
+        "best_models": [
+          "ExtraTrees",
+          "GradientBoost_Shallow",
+          "LightGBM_HistGBM"
+        ],
+        "ensemble_weights": [
+          0.338,
+          0.332,
+          0.33
+        ]
+      },
+      "48h": {
+        "persistence_mae": 5.17,
+        "seasonal_persistence_mae": 5.98,
+        "previous_model_mae": 6.68,
+        "improved_ensemble_mae": 6.81,
+        "improved_ensemble_rmse": 10.87,
+        "improved_ensemble_r2": 0.4107,
+        "correlation": 0.6952,
+        "high_pollution_recall_pct": 59.8,
+        "peak_magnitude_mae": 19.75,
+        "q80_interval_width": 7.59,
+        "q90_interval_width": 12.11,
+        "best_models": [
+          "ExtraTrees",
+          "GradientBoost_Shallow",
+          "LightGBM_HistGBM"
+        ],
+        "ensemble_weights": [
+          0.336,
+          0.333,
+          0.331
+        ]
+      },
+      "72h": {
+        "persistence_mae": 6.02,
+        "seasonal_persistence_mae": 6.74,
+        "previous_model_mae": 7.33,
+        "improved_ensemble_mae": 7.28,
+        "improved_ensemble_rmse": 11.36,
+        "improved_ensemble_r2": 0.3604,
+        "correlation": 0.6295,
+        "high_pollution_recall_pct": 54.2,
+        "peak_magnitude_mae": 20.16,
+        "q80_interval_width": 7.74,
+        "q90_interval_width": 12.05,
+        "best_models": [
+          "ExtraTrees",
+          "LightGBM_HistGBM",
+          "GradientBoost_Shallow"
+        ],
+        "ensemble_weights": [
+          0.341,
+          0.331,
+          0.328
+        ]
+      }
+    },
+    "no2": {
+      "6h": {
+        "persistence_mae": 9.45,
+        "seasonal_persistence_mae": 7.3,
+        "previous_model_mae": 13.7,
+        "improved_ensemble_mae": 11.02,
+        "improved_ensemble_rmse": 20.45,
+        "improved_ensemble_r2": 0.1661,
+        "correlation": 0.5235,
+        "high_pollution_recall_pct": 20.6,
+        "peak_magnitude_mae": 39.13,
+        "q80_interval_width": 11.11,
+        "q90_interval_width": 15.66,
+        "best_models": [
+          "GradientBoost_Shallow",
+          "ExtraTrees",
+          "LightGBM_HistGBM"
+        ],
+        "ensemble_weights": [
+          0.362,
+          0.35,
+          0.288
+        ]
+      },
+      "12h": {
+        "persistence_mae": 9.56,
+        "seasonal_persistence_mae": 7.32,
+        "previous_model_mae": 10.95,
+        "improved_ensemble_mae": 11.19,
+        "improved_ensemble_rmse": 20.32,
+        "improved_ensemble_r2": 0.1776,
+        "correlation": 0.555,
+        "high_pollution_recall_pct": 21.9,
+        "peak_magnitude_mae": 40.64,
+        "q80_interval_width": 11.3,
+        "q90_interval_width": 15.75,
+        "best_models": [
+          "GradientBoost_Shallow",
+          "LightGBM_HistGBM",
+          "ExtraTrees"
+        ],
+        "ensemble_weights": [
+          0.375,
+          0.348,
+          0.278
+        ]
+      },
+      "24h": {
+        "persistence_mae": 7.34,
+        "seasonal_persistence_mae": 9.09,
+        "previous_model_mae": 11.34,
+        "improved_ensemble_mae": 13.1,
+        "improved_ensemble_rmse": 20.72,
+        "improved_ensemble_r2": 0.1464,
+        "correlation": 0.6869,
+        "high_pollution_recall_pct": 21.9,
+        "peak_magnitude_mae": 41.31,
+        "q80_interval_width": 10.88,
+        "q90_interval_width": 15.32,
+        "best_models": [
+          "GradientBoost_Shallow",
+          "ExtraTrees",
+          "LightGBM_HistGBM"
+        ],
+        "ensemble_weights": [
+          0.362,
+          0.328,
+          0.31
+        ]
+      },
+      "48h": {
+        "persistence_mae": 9.13,
+        "seasonal_persistence_mae": 9.99,
+        "previous_model_mae": 15.91,
+        "improved_ensemble_mae": 16.44,
+        "improved_ensemble_rmse": 25.4,
+        "improved_ensemble_r2": -0.279,
+        "correlation": 0.34,
+        "high_pollution_recall_pct": 0.0,
+        "peak_magnitude_mae": 52.99,
+        "q80_interval_width": 14.08,
+        "q90_interval_width": 19.12,
+        "best_models": [
+          "GradientBoost_Shallow",
+          "LightGBM_HistGBM",
+          "ExtraTrees"
+        ],
+        "ensemble_weights": [
+          0.373,
+          0.324,
+          0.303
+        ]
+      },
+      "72h": {
+        "persistence_mae": 10.07,
+        "seasonal_persistence_mae": 11.19,
+        "previous_model_mae": 18.36,
+        "improved_ensemble_mae": 19.89,
+        "improved_ensemble_rmse": 29.6,
+        "improved_ensemble_r2": -0.7296,
+        "correlation": -0.188,
+        "high_pollution_recall_pct": 0.0,
+        "peak_magnitude_mae": 62.44,
+        "q80_interval_width": 16.88,
+        "q90_interval_width": 22.48,
+        "best_models": [
+          "GradientBoost_Shallow",
+          "LightGBM_HistGBM",
+          "ExtraTrees"
+        ],
+        "ensemble_weights": [
+          0.352,
+          0.332,
+          0.315
+        ]
+      }
+    },
+    "so2": {
+      "6h": {
+        "persistence_mae": 3.9,
+        "seasonal_persistence_mae": 3.8,
+        "previous_model_mae": 3.7,
+        "improved_ensemble_mae": 3.84,
+        "improved_ensemble_rmse": 5.33,
+        "improved_ensemble_r2": 0.2759,
+        "correlation": 0.5946,
+        "high_pollution_recall_pct": 24.1,
+        "peak_magnitude_mae": 8.39,
+        "q80_interval_width": 4.45,
+        "q90_interval_width": 6.36,
+        "best_models": [
+          "ExtraTrees",
+          "ElasticNet",
+          "GradientBoost_Shallow"
+        ],
+        "ensemble_weights": [
+          0.373,
+          0.327,
+          0.3
+        ]
+      },
+      "12h": {
+        "persistence_mae": 4.36,
+        "seasonal_persistence_mae": 3.81,
+        "previous_model_mae": 4.23,
+        "improved_ensemble_mae": 4.07,
+        "improved_ensemble_rmse": 5.54,
+        "improved_ensemble_r2": 0.2189,
+        "correlation": 0.5244,
+        "high_pollution_recall_pct": 30.3,
+        "peak_magnitude_mae": 7.94,
+        "q80_interval_width": 5.05,
+        "q90_interval_width": 6.98,
+        "best_models": [
+          "ExtraTrees",
+          "ElasticNet",
+          "GradientBoost_Shallow"
+        ],
+        "ensemble_weights": [
+          0.357,
+          0.347,
+          0.296
+        ]
+      },
+      "24h": {
+        "persistence_mae": 3.81,
+        "seasonal_persistence_mae": 4.34,
+        "previous_model_mae": 4.19,
+        "improved_ensemble_mae": 4.48,
+        "improved_ensemble_rmse": 6.09,
+        "improved_ensemble_r2": 0.0565,
+        "correlation": 0.4835,
+        "high_pollution_recall_pct": 4.1,
+        "peak_magnitude_mae": 10.73,
+        "q80_interval_width": 5.69,
+        "q90_interval_width": 8.22,
+        "best_models": [
+          "ElasticNet",
+          "ExtraTrees",
+          "Ridge"
+        ],
+        "ensemble_weights": [
+          0.362,
+          0.344,
+          0.294
+        ]
+      },
+      "48h": {
+        "persistence_mae": 4.36,
+        "seasonal_persistence_mae": 4.8,
+        "previous_model_mae": 7.59,
+        "improved_ensemble_mae": 5.35,
+        "improved_ensemble_rmse": 7.12,
+        "improved_ensemble_r2": -0.2823,
+        "correlation": 0.2469,
+        "high_pollution_recall_pct": 1.0,
+        "peak_magnitude_mae": 12.92,
+        "q80_interval_width": 6.37,
+        "q90_interval_width": 9.27,
+        "best_models": [
+          "ExtraTrees",
+          "ElasticNet",
+          "Ridge"
+        ],
+        "ensemble_weights": [
+          0.363,
+          0.356,
+          0.281
+        ]
+      },
+      "72h": {
+        "persistence_mae": 4.83,
+        "seasonal_persistence_mae": 5.37,
+        "previous_model_mae": 6.32,
+        "improved_ensemble_mae": 5.85,
+        "improved_ensemble_rmse": 7.7,
+        "improved_ensemble_r2": -0.4863,
+        "correlation": 0.04,
+        "high_pollution_recall_pct": 0.0,
+        "peak_magnitude_mae": 14.63,
+        "q80_interval_width": 7.59,
+        "q90_interval_width": 10.01,
+        "best_models": [
+          "ElasticNet",
+          "ExtraTrees",
+          "Ridge"
+        ],
+        "ensemble_weights": [
+          0.376,
+          0.342,
+          0.282
+        ]
+      }
+    },
+    "co": {
+      "6h": {
+        "persistence_mae": 0.29,
+        "seasonal_persistence_mae": 0.28,
+        "previous_model_mae": 0.33,
+        "improved_ensemble_mae": 0.3,
+        "improved_ensemble_rmse": 0.37,
+        "improved_ensemble_r2": 0.3225,
+        "correlation": 0.5763,
+        "high_pollution_recall_pct": 10.4,
+        "peak_magnitude_mae": 0.51,
+        "q80_interval_width": 0.55,
+        "q90_interval_width": 0.74,
+        "best_models": [
+          "ElasticNet",
+          "Ridge",
+          "GradientBoost_Shallow"
+        ],
+        "ensemble_weights": [
+          0.334,
+          0.334,
+          0.332
+        ]
+      },
+      "12h": {
+        "persistence_mae": 0.33,
+        "seasonal_persistence_mae": 0.28,
+        "previous_model_mae": 0.29,
+        "improved_ensemble_mae": 0.3,
+        "improved_ensemble_rmse": 0.37,
+        "improved_ensemble_r2": 0.3105,
+        "correlation": 0.5647,
+        "high_pollution_recall_pct": 8.4,
+        "peak_magnitude_mae": 0.52,
+        "q80_interval_width": 0.54,
+        "q90_interval_width": 0.73,
+        "best_models": [
+          "GradientBoost_Shallow",
+          "Ridge",
+          "ElasticNet"
+        ],
+        "ensemble_weights": [
+          0.336,
+          0.334,
+          0.33
+        ]
+      },
+      "24h": {
+        "persistence_mae": 0.28,
+        "seasonal_persistence_mae": 0.32,
+        "previous_model_mae": 0.3,
+        "improved_ensemble_mae": 0.3,
+        "improved_ensemble_rmse": 0.38,
+        "improved_ensemble_r2": 0.2892,
+        "correlation": 0.5504,
+        "high_pollution_recall_pct": 7.1,
+        "peak_magnitude_mae": 0.52,
+        "q80_interval_width": 0.55,
+        "q90_interval_width": 0.73,
+        "best_models": [
+          "GradientBoost_Shallow",
+          "Ridge",
+          "ElasticNet"
+        ],
+        "ensemble_weights": [
+          0.335,
+          0.333,
+          0.332
+        ]
+      },
+      "48h": {
+        "persistence_mae": 0.32,
+        "seasonal_persistence_mae": 0.35,
+        "previous_model_mae": 0.36,
+        "improved_ensemble_mae": 0.35,
+        "improved_ensemble_rmse": 0.43,
+        "improved_ensemble_r2": 0.0337,
+        "correlation": 0.4498,
+        "high_pollution_recall_pct": 26.3,
+        "peak_magnitude_mae": 0.44,
+        "q80_interval_width": 0.6,
+        "q90_interval_width": 0.76,
+        "best_models": [
+          "ElasticNet",
+          "Ridge",
+          "ExtraTrees"
+        ],
+        "ensemble_weights": [
+          0.338,
+          0.334,
+          0.328
+        ]
+      },
+      "72h": {
+        "persistence_mae": 0.35,
+        "seasonal_persistence_mae": 0.35,
+        "previous_model_mae": 0.37,
+        "improved_ensemble_mae": 0.36,
+        "improved_ensemble_rmse": 0.45,
+        "improved_ensemble_r2": -0.0893,
+        "correlation": 0.3755,
+        "high_pollution_recall_pct": 22.9,
+        "peak_magnitude_mae": 0.44,
+        "q80_interval_width": 0.63,
+        "q90_interval_width": 0.79,
+        "best_models": [
+          "ElasticNet",
+          "Ridge",
+          "GradientBoost_Shallow"
+        ],
+        "ensemble_weights": [
+          0.336,
+          0.333,
+          0.331
+        ]
+      }
+    },
+    "nh3": {
+      "6h": {
+        "persistence_mae": 3.19,
+        "seasonal_persistence_mae": 3.4,
+        "previous_model_mae": 3.89,
+        "improved_ensemble_mae": 5.78,
+        "improved_ensemble_rmse": 9.07,
+        "improved_ensemble_r2": 0.7369,
+        "correlation": 0.8865,
+        "high_pollution_recall_pct": 39.6,
+        "peak_magnitude_mae": 14.77,
+        "q80_interval_width": 4.6,
+        "q90_interval_width": 6.39,
+        "best_models": [
+          "ExtraTrees",
+          "LightGBM_HistGBM",
+          "GradientBoost_Shallow"
+        ],
+        "ensemble_weights": [
+          0.368,
+          0.34,
+          0.292
+        ]
+      },
+      "12h": {
+        "persistence_mae": 3.58,
+        "seasonal_persistence_mae": 3.4,
+        "previous_model_mae": 4.52,
+        "improved_ensemble_mae": 5.25,
+        "improved_ensemble_rmse": 7.88,
+        "improved_ensemble_r2": 0.8014,
+        "correlation": 0.9113,
+        "high_pollution_recall_pct": 59.3,
+        "peak_magnitude_mae": 12.18,
+        "q80_interval_width": 5.36,
+        "q90_interval_width": 7.28,
+        "best_models": [
+          "GradientBoost_Shallow",
+          "LightGBM_HistGBM",
+          "ElasticNet"
+        ],
+        "ensemble_weights": [
+          0.341,
+          0.331,
+          0.328
+        ]
+      },
+      "24h": {
+        "persistence_mae": 3.41,
+        "seasonal_persistence_mae": 3.83,
+        "previous_model_mae": 5.35,
+        "improved_ensemble_mae": 5.24,
+        "improved_ensemble_rmse": 8.33,
+        "improved_ensemble_r2": 0.7784,
+        "correlation": 0.9173,
+        "high_pollution_recall_pct": 40.6,
+        "peak_magnitude_mae": 14.22,
+        "q80_interval_width": 5.82,
+        "q90_interval_width": 7.69,
+        "best_models": [
+          "ElasticNet",
+          "ExtraTrees",
+          "LightGBM_HistGBM"
+        ],
+        "ensemble_weights": [
+          0.353,
+          0.342,
+          0.305
+        ]
+      },
+      "48h": {
+        "persistence_mae": 3.84,
+        "seasonal_persistence_mae": 4.24,
+        "previous_model_mae": 5.49,
+        "improved_ensemble_mae": 5.43,
+        "improved_ensemble_rmse": 9.31,
+        "improved_ensemble_r2": 0.723,
+        "correlation": 0.8901,
+        "high_pollution_recall_pct": 15.5,
+        "peak_magnitude_mae": 17.06,
+        "q80_interval_width": 6.19,
+        "q90_interval_width": 8.84,
+        "best_models": [
+          "GradientBoost_Shallow",
+          "LightGBM_HistGBM",
+          "ExtraTrees"
+        ],
+        "ensemble_weights": [
+          0.347,
+          0.343,
+          0.31
+        ]
+      },
+      "72h": {
+        "persistence_mae": 4.27,
+        "seasonal_persistence_mae": 4.41,
+        "previous_model_mae": 9.21,
+        "improved_ensemble_mae": 7.53,
+        "improved_ensemble_rmse": 10.46,
+        "improved_ensemble_r2": 0.6504,
+        "correlation": 0.897,
+        "high_pollution_recall_pct": 21.4,
+        "peak_magnitude_mae": 19.08,
+        "q80_interval_width": 7.24,
+        "q90_interval_width": 9.18,
+        "best_models": [
+          "ElasticNet",
+          "ExtraTrees",
+          "GradientBoost_Shallow"
+        ],
+        "ensemble_weights": [
+          0.364,
+          0.338,
+          0.298
+        ]
+      }
+    }
+  },
+  "comparison_table": [
+    {
+      "pollutant": "PM25",
+      "horizon": "24h",
+      "persistence_mae": 48.65,
+      "seasonal_mae": 56.17,
+      "current_model_mae": 49.91,
+      "improved_model_mae": 45.63,
+      "improved_rmse": 75.87,
+      "improved_r2": 0.1584,
+      "improvement_vs_current_pct": 8.6,
+      "best_model_architecture": "Ensemble (GradientBoost_Shallow + LightGBM_HistGBM)"
+    },
+    {
+      "pollutant": "PM25",
+      "horizon": "48h",
+      "persistence_mae": 56.64,
+      "seasonal_mae": 55.34,
+      "current_model_mae": 57.16,
+      "improved_model_mae": 49.9,
+      "improved_rmse": 82.27,
+      "improved_r2": 0.0094,
+      "improvement_vs_current_pct": 12.7,
+      "best_model_architecture": "Ensemble (Ridge + ExtraTrees)"
+    },
+    {
+      "pollutant": "PM25",
+      "horizon": "72h",
+      "persistence_mae": 55.79,
+      "seasonal_mae": 57.9,
+      "current_model_mae": 59.04,
+      "improved_model_mae": 54.38,
+      "improved_rmse": 85.58,
+      "improved_r2": -0.0739,
+      "improvement_vs_current_pct": 7.9,
+      "best_model_architecture": "Ensemble (Ridge + ExtraTrees)"
+    },
+    {
+      "pollutant": "PM10",
+      "horizon": "24h",
+      "persistence_mae": 60.58,
+      "seasonal_mae": 69.23,
+      "current_model_mae": 57.76,
+      "improved_model_mae": 56.17,
+      "improved_rmse": 81.29,
+      "improved_r2": 0.5304,
+      "improvement_vs_current_pct": 2.8,
+      "best_model_architecture": "Ensemble (ExtraTrees + Ridge)"
+    },
+    {
+      "pollutant": "PM10",
+      "horizon": "48h",
+      "persistence_mae": 69.77,
+      "seasonal_mae": 72.65,
+      "current_model_mae": 65.31,
+      "improved_model_mae": 61.75,
+      "improved_rmse": 86.6,
+      "improved_r2": 0.4606,
+      "improvement_vs_current_pct": 5.5,
+      "best_model_architecture": "Ensemble (ExtraTrees + Ridge)"
+    },
+    {
+      "pollutant": "PM10",
+      "horizon": "72h",
+      "persistence_mae": 73.22,
+      "seasonal_mae": 70.21,
+      "current_model_mae": 72.28,
+      "improved_model_mae": 64.27,
+      "improved_rmse": 90.06,
+      "improved_r2": 0.4083,
+      "improvement_vs_current_pct": 11.1,
+      "best_model_architecture": "Ensemble (Ridge + ExtraTrees)"
+    },
+    {
+      "pollutant": "O3",
+      "horizon": "24h",
+      "persistence_mae": 3.93,
+      "seasonal_mae": 5.16,
+      "current_model_mae": 5.47,
+      "improved_model_mae": 5.61,
+      "improved_rmse": 9.67,
+      "improved_r2": 0.5293,
+      "improvement_vs_current_pct": -2.6,
+      "best_model_architecture": "Ensemble (ExtraTrees + GradientBoost_Shallow)"
+    },
+    {
+      "pollutant": "O3",
+      "horizon": "48h",
+      "persistence_mae": 5.17,
+      "seasonal_mae": 5.98,
+      "current_model_mae": 6.68,
+      "improved_model_mae": 6.81,
+      "improved_rmse": 10.87,
+      "improved_r2": 0.4107,
+      "improvement_vs_current_pct": -1.9,
+      "best_model_architecture": "Ensemble (ExtraTrees + GradientBoost_Shallow)"
+    },
+    {
+      "pollutant": "O3",
+      "horizon": "72h",
+      "persistence_mae": 6.02,
+      "seasonal_mae": 6.74,
+      "current_model_mae": 7.33,
+      "improved_model_mae": 7.28,
+      "improved_rmse": 11.36,
+      "improved_r2": 0.3604,
+      "improvement_vs_current_pct": 0.7,
+      "best_model_architecture": "Ensemble (ExtraTrees + LightGBM_HistGBM)"
+    },
+    {
+      "pollutant": "NO2",
+      "horizon": "24h",
+      "persistence_mae": 7.34,
+      "seasonal_mae": 9.09,
+      "current_model_mae": 11.34,
+      "improved_model_mae": 13.1,
+      "improved_rmse": 20.72,
+      "improved_r2": 0.1464,
+      "improvement_vs_current_pct": -15.5,
+      "best_model_architecture": "Ensemble (GradientBoost_Shallow + ExtraTrees)"
+    },
+    {
+      "pollutant": "NO2",
+      "horizon": "48h",
+      "persistence_mae": 9.13,
+      "seasonal_mae": 9.99,
+      "current_model_mae": 15.91,
+      "improved_model_mae": 16.44,
+      "improved_rmse": 25.4,
+      "improved_r2": -0.279,
+      "improvement_vs_current_pct": -3.3,
+      "best_model_architecture": "Ensemble (GradientBoost_Shallow + LightGBM_HistGBM)"
+    },
+    {
+      "pollutant": "NO2",
+      "horizon": "72h",
+      "persistence_mae": 10.07,
+      "seasonal_mae": 11.19,
+      "current_model_mae": 18.36,
+      "improved_model_mae": 19.89,
+      "improved_rmse": 29.6,
+      "improved_r2": -0.7296,
+      "improvement_vs_current_pct": -8.3,
+      "best_model_architecture": "Ensemble (GradientBoost_Shallow + LightGBM_HistGBM)"
+    },
+    {
+      "pollutant": "SO2",
+      "horizon": "24h",
+      "persistence_mae": 3.81,
+      "seasonal_mae": 4.34,
+      "current_model_mae": 4.19,
+      "improved_model_mae": 4.48,
+      "improved_rmse": 6.09,
+      "improved_r2": 0.0565,
+      "improvement_vs_current_pct": -6.9,
+      "best_model_architecture": "Ensemble (ElasticNet + ExtraTrees)"
+    },
+    {
+      "pollutant": "SO2",
+      "horizon": "48h",
+      "persistence_mae": 4.36,
+      "seasonal_mae": 4.8,
+      "current_model_mae": 7.59,
+      "improved_model_mae": 5.35,
+      "improved_rmse": 7.12,
+      "improved_r2": -0.2823,
+      "improvement_vs_current_pct": 29.5,
+      "best_model_architecture": "Ensemble (ExtraTrees + ElasticNet)"
+    },
+    {
+      "pollutant": "SO2",
+      "horizon": "72h",
+      "persistence_mae": 4.83,
+      "seasonal_mae": 5.37,
+      "current_model_mae": 6.32,
+      "improved_model_mae": 5.85,
+      "improved_rmse": 7.7,
+      "improved_r2": -0.4863,
+      "improvement_vs_current_pct": 7.4,
+      "best_model_architecture": "Ensemble (ElasticNet + ExtraTrees)"
+    },
+    {
+      "pollutant": "CO",
+      "horizon": "24h",
+      "persistence_mae": 0.28,
+      "seasonal_mae": 0.32,
+      "current_model_mae": 0.3,
+      "improved_model_mae": 0.3,
+      "improved_rmse": 0.38,
+      "improved_r2": 0.2892,
+      "improvement_vs_current_pct": 0.0,
+      "best_model_architecture": "Ensemble (GradientBoost_Shallow + Ridge)"
+    },
+    {
+      "pollutant": "CO",
+      "horizon": "48h",
+      "persistence_mae": 0.32,
+      "seasonal_mae": 0.35,
+      "current_model_mae": 0.36,
+      "improved_model_mae": 0.35,
+      "improved_rmse": 0.43,
+      "improved_r2": 0.0337,
+      "improvement_vs_current_pct": 2.8,
+      "best_model_architecture": "Ensemble (ElasticNet + Ridge)"
+    },
+    {
+      "pollutant": "CO",
+      "horizon": "72h",
+      "persistence_mae": 0.35,
+      "seasonal_mae": 0.35,
+      "current_model_mae": 0.37,
+      "improved_model_mae": 0.36,
+      "improved_rmse": 0.45,
+      "improved_r2": -0.0893,
+      "improvement_vs_current_pct": 2.7,
+      "best_model_architecture": "Ensemble (ElasticNet + Ridge)"
+    },
+    {
+      "pollutant": "NH3",
+      "horizon": "24h",
+      "persistence_mae": 3.41,
+      "seasonal_mae": 3.83,
+      "current_model_mae": 5.35,
+      "improved_model_mae": 5.24,
+      "improved_rmse": 8.33,
+      "improved_r2": 0.7784,
+      "improvement_vs_current_pct": 2.1,
+      "best_model_architecture": "Ensemble (ElasticNet + ExtraTrees)"
+    },
+    {
+      "pollutant": "NH3",
+      "horizon": "48h",
+      "persistence_mae": 3.84,
+      "seasonal_mae": 4.24,
+      "current_model_mae": 5.49,
+      "improved_model_mae": 5.43,
+      "improved_rmse": 9.31,
+      "improved_r2": 0.723,
+      "improvement_vs_current_pct": 1.1,
+      "best_model_architecture": "Ensemble (GradientBoost_Shallow + LightGBM_HistGBM)"
+    },
+    {
+      "pollutant": "NH3",
+      "horizon": "72h",
+      "persistence_mae": 4.27,
+      "seasonal_mae": 4.41,
+      "current_model_mae": 9.21,
+      "improved_model_mae": 7.53,
+      "improved_rmse": 10.46,
+      "improved_r2": 0.6504,
+      "improvement_vs_current_pct": 18.2,
+      "best_model_architecture": "Ensemble (ElasticNet + ExtraTrees)"
+    }
+  ],
+  "ablation_study": [
+    {
+      "group": "A",
+      "description": "A. Pollution History Only (Lags 1-72h, Rolling Stats, Cross-Pollutants)",
+      "mae_24h": 48.74,
+      "r2_24h": 0.0223,
+      "mae_48h": 51.01,
+      "r2_48h": -0.0419,
+      "mae_72h": 48.84,
+      "r2_72h": 0.0234
+    },
+    {
+      "group": "B",
+      "description": "B. Pollution + Cyclical Calendar & Seasonality",
+      "mae_24h": 50.85,
+      "r2_24h": 0.0137,
+      "mae_48h": 52.87,
+      "r2_48h": -0.0041,
+      "mae_72h": 56.4,
+      "r2_72h": -0.1341
+    },
+    {
+      "group": "C",
+      "description": "C. Pollution + Calendar + Observed Meteorology (T0)",
+      "mae_24h": 49.41,
+      "r2_24h": 0.0788,
+      "mae_48h": 51.45,
+      "r2_48h": 0.0478,
+      "mae_72h": 56.57,
+      "r2_72h": -0.1536
+    },
+    {
+      "group": "D",
+      "description": "D. Pollution + Calendar + Future 72h Forecast Meteorology (T+h)",
+      "mae_24h": 47.92,
+      "r2_24h": 0.1005,
+      "mae_48h": 52.31,
+      "r2_48h": 0.0067,
+      "mae_72h": 56.18,
+      "r2_72h": -0.1482
+    },
+    {
+      "group": "E",
+      "description": "E. Group D + PBL Height, Ventilation Coefficient & Thermal Inversion",
+      "mae_24h": 48.14,
+      "r2_24h": 0.1041,
+      "mae_48h": 51.76,
+      "r2_48h": 0.0447,
+      "mae_72h": 55.48,
+      "r2_72h": -0.1231
+    },
+    {
+      "group": "F",
+      "description": "F. Group E + Upwind Stubble-Burning Transport Indicators",
+      "mae_24h": 48.14,
+      "r2_24h": 0.1041,
+      "mae_48h": 51.76,
+      "r2_48h": 0.0447,
+      "mae_72h": 55.48,
+      "r2_72h": -0.1231
+    },
+    {
+      "group": "G",
+      "description": "G. Full Scientific Regime-Aware Ensemble (All Features + Interactions)",
+      "mae_24h": 47.59,
+      "r2_24h": 0.1256,
+      "mae_48h": 51.73,
+      "r2_48h": 0.0326,
+      "mae_72h": 55.93,
+      "r2_72h": -0.1183
+    }
+  ],
+  "ensemble_meta_weights": {
+    "pm25": {
+      "6h": {
+        "top_models": [
+          "GradientBoost_Shallow",
+          "LightGBM_HistGBM",
+          "ExtraTrees"
+        ],
+        "weights": [
+          0.342,
+          0.339,
+          0.319
+        ],
+        "q80_err": 13.35,
+        "q90_err": 23.33
+      },
+      "12h": {
+        "top_models": [
+          "LightGBM_HistGBM",
+          "GradientBoost_Shallow",
+          "ExtraTrees"
+        ],
+        "weights": [
+          0.34,
+          0.335,
+          0.325
+        ],
+        "q80_err": 14.46,
+        "q90_err": 22.37
+      },
+      "24h": {
+        "top_models": [
+          "GradientBoost_Shallow",
+          "LightGBM_HistGBM",
+          "Ridge"
+        ],
+        "weights": [
+          0.34,
+          0.334,
+          0.325
+        ],
+        "q80_err": 15.16,
+        "q90_err": 23.06
+      },
+      "48h": {
+        "top_models": [
+          "Ridge",
+          "ExtraTrees",
+          "GradientBoost_Shallow"
+        ],
+        "weights": [
+          0.364,
+          0.32,
+          0.316
+        ],
+        "q80_err": 15.93,
+        "q90_err": 24.11
+      },
+      "72h": {
+        "top_models": [
+          "Ridge",
+          "ExtraTrees",
+          "GradientBoost_Shallow"
+        ],
+        "weights": [
+          0.349,
+          0.332,
+          0.319
+        ],
+        "q80_err": 15.13,
+        "q90_err": 23.74
+      }
+    },
+    "pm10": {
+      "6h": {
+        "top_models": [
+          "GradientBoost_Shallow",
+          "ExtraTrees",
+          "LightGBM_HistGBM"
+        ],
+        "weights": [
+          0.34,
+          0.333,
+          0.327
+        ],
+        "q80_err": 23.96,
+        "q90_err": 34.16
+      },
+      "12h": {
+        "top_models": [
+          "ExtraTrees",
+          "GradientBoost_Shallow",
+          "Ridge"
+        ],
+        "weights": [
+          0.351,
+          0.328,
+          0.321
+        ],
+        "q80_err": 26.74,
+        "q90_err": 37.74
+      },
+      "24h": {
+        "top_models": [
+          "ExtraTrees",
+          "Ridge",
+          "GradientBoost_Shallow"
+        ],
+        "weights": [
+          0.353,
+          0.349,
+          0.298
+        ],
+        "q80_err": 29.76,
+        "q90_err": 40.12
+      },
+      "48h": {
+        "top_models": [
+          "ExtraTrees",
+          "Ridge",
+          "GradientBoost_Shallow"
+        ],
+        "weights": [
+          0.358,
+          0.336,
+          0.306
+        ],
+        "q80_err": 31.28,
+        "q90_err": 42.2
+      },
+      "72h": {
+        "top_models": [
+          "Ridge",
+          "ExtraTrees",
+          "ElasticNet"
+        ],
+        "weights": [
+          0.353,
+          0.325,
+          0.322
+        ],
+        "q80_err": 33.86,
+        "q90_err": 45.88
+      }
+    },
+    "o3": {
+      "6h": {
+        "top_models": [
+          "GradientBoost_Shallow",
+          "ExtraTrees",
+          "LightGBM_HistGBM"
+        ],
+        "weights": [
+          0.338,
+          0.331,
+          0.331
+        ],
+        "q80_err": 6.68,
+        "q90_err": 11.06
+      },
+      "12h": {
+        "top_models": [
+          "GradientBoost_Shallow",
+          "ExtraTrees",
+          "LightGBM_HistGBM"
+        ],
+        "weights": [
+          0.338,
+          0.336,
+          0.325
+        ],
+        "q80_err": 6.71,
+        "q90_err": 11.46
+      },
+      "24h": {
+        "top_models": [
+          "ExtraTrees",
+          "GradientBoost_Shallow",
+          "LightGBM_HistGBM"
+        ],
+        "weights": [
+          0.338,
+          0.332,
+          0.33
+        ],
+        "q80_err": 6.7,
+        "q90_err": 11.81
+      },
+      "48h": {
+        "top_models": [
+          "ExtraTrees",
+          "GradientBoost_Shallow",
+          "LightGBM_HistGBM"
+        ],
+        "weights": [
+          0.336,
+          0.333,
+          0.331
+        ],
+        "q80_err": 7.59,
+        "q90_err": 12.11
+      },
+      "72h": {
+        "top_models": [
+          "ExtraTrees",
+          "LightGBM_HistGBM",
+          "GradientBoost_Shallow"
+        ],
+        "weights": [
+          0.341,
+          0.331,
+          0.328
+        ],
+        "q80_err": 7.74,
+        "q90_err": 12.05
+      }
+    },
+    "no2": {
+      "6h": {
+        "top_models": [
+          "GradientBoost_Shallow",
+          "ExtraTrees",
+          "LightGBM_HistGBM"
+        ],
+        "weights": [
+          0.362,
+          0.35,
+          0.288
+        ],
+        "q80_err": 11.11,
+        "q90_err": 15.66
+      },
+      "12h": {
+        "top_models": [
+          "GradientBoost_Shallow",
+          "LightGBM_HistGBM",
+          "ExtraTrees"
+        ],
+        "weights": [
+          0.375,
+          0.348,
+          0.278
+        ],
+        "q80_err": 11.3,
+        "q90_err": 15.75
+      },
+      "24h": {
+        "top_models": [
+          "GradientBoost_Shallow",
+          "ExtraTrees",
+          "LightGBM_HistGBM"
+        ],
+        "weights": [
+          0.362,
+          0.328,
+          0.31
+        ],
+        "q80_err": 10.88,
+        "q90_err": 15.32
+      },
+      "48h": {
+        "top_models": [
+          "GradientBoost_Shallow",
+          "LightGBM_HistGBM",
+          "ExtraTrees"
+        ],
+        "weights": [
+          0.373,
+          0.324,
+          0.303
+        ],
+        "q80_err": 14.08,
+        "q90_err": 19.12
+      },
+      "72h": {
+        "top_models": [
+          "GradientBoost_Shallow",
+          "LightGBM_HistGBM",
+          "ExtraTrees"
+        ],
+        "weights": [
+          0.352,
+          0.332,
+          0.315
+        ],
+        "q80_err": 16.88,
+        "q90_err": 22.48
+      }
+    },
+    "so2": {
+      "6h": {
+        "top_models": [
+          "ExtraTrees",
+          "ElasticNet",
+          "GradientBoost_Shallow"
+        ],
+        "weights": [
+          0.373,
+          0.327,
+          0.3
+        ],
+        "q80_err": 4.45,
+        "q90_err": 6.36
+      },
+      "12h": {
+        "top_models": [
+          "ExtraTrees",
+          "ElasticNet",
+          "GradientBoost_Shallow"
+        ],
+        "weights": [
+          0.357,
+          0.347,
+          0.296
+        ],
+        "q80_err": 5.05,
+        "q90_err": 6.98
+      },
+      "24h": {
+        "top_models": [
+          "ElasticNet",
+          "ExtraTrees",
+          "Ridge"
+        ],
+        "weights": [
+          0.362,
+          0.344,
+          0.294
+        ],
+        "q80_err": 5.69,
+        "q90_err": 8.22
+      },
+      "48h": {
+        "top_models": [
+          "ExtraTrees",
+          "ElasticNet",
+          "Ridge"
+        ],
+        "weights": [
+          0.363,
+          0.356,
+          0.281
+        ],
+        "q80_err": 6.37,
+        "q90_err": 9.27
+      },
+      "72h": {
+        "top_models": [
+          "ElasticNet",
+          "ExtraTrees",
+          "Ridge"
+        ],
+        "weights": [
+          0.376,
+          0.342,
+          0.282
+        ],
+        "q80_err": 7.59,
+        "q90_err": 10.01
+      }
+    },
+    "co": {
+      "6h": {
+        "top_models": [
+          "ElasticNet",
+          "Ridge",
+          "GradientBoost_Shallow"
+        ],
+        "weights": [
+          0.334,
+          0.334,
+          0.332
+        ],
+        "q80_err": 0.55,
+        "q90_err": 0.74
+      },
+      "12h": {
+        "top_models": [
+          "GradientBoost_Shallow",
+          "Ridge",
+          "ElasticNet"
+        ],
+        "weights": [
+          0.336,
+          0.334,
+          0.33
+        ],
+        "q80_err": 0.54,
+        "q90_err": 0.73
+      },
+      "24h": {
+        "top_models": [
+          "GradientBoost_Shallow",
+          "Ridge",
+          "ElasticNet"
+        ],
+        "weights": [
+          0.335,
+          0.333,
+          0.332
+        ],
+        "q80_err": 0.55,
+        "q90_err": 0.73
+      },
+      "48h": {
+        "top_models": [
+          "ElasticNet",
+          "Ridge",
+          "ExtraTrees"
+        ],
+        "weights": [
+          0.338,
+          0.334,
+          0.328
+        ],
+        "q80_err": 0.6,
+        "q90_err": 0.76
+      },
+      "72h": {
+        "top_models": [
+          "ElasticNet",
+          "Ridge",
+          "GradientBoost_Shallow"
+        ],
+        "weights": [
+          0.336,
+          0.333,
+          0.331
+        ],
+        "q80_err": 0.63,
+        "q90_err": 0.79
+      }
+    },
+    "nh3": {
+      "6h": {
+        "top_models": [
+          "ExtraTrees",
+          "LightGBM_HistGBM",
+          "GradientBoost_Shallow"
+        ],
+        "weights": [
+          0.368,
+          0.34,
+          0.292
+        ],
+        "q80_err": 4.6,
+        "q90_err": 6.39
+      },
+      "12h": {
+        "top_models": [
+          "GradientBoost_Shallow",
+          "LightGBM_HistGBM",
+          "ElasticNet"
+        ],
+        "weights": [
+          0.341,
+          0.331,
+          0.328
+        ],
+        "q80_err": 5.36,
+        "q90_err": 7.28
+      },
+      "24h": {
+        "top_models": [
+          "ElasticNet",
+          "ExtraTrees",
+          "LightGBM_HistGBM"
+        ],
+        "weights": [
+          0.353,
+          0.342,
+          0.305
+        ],
+        "q80_err": 5.82,
+        "q90_err": 7.69
+      },
+      "48h": {
+        "top_models": [
+          "GradientBoost_Shallow",
+          "LightGBM_HistGBM",
+          "ExtraTrees"
+        ],
+        "weights": [
+          0.347,
+          0.343,
+          0.31
+        ],
+        "q80_err": 6.19,
+        "q90_err": 8.84
+      },
+      "72h": {
+        "top_models": [
+          "ElasticNet",
+          "ExtraTrees",
+          "GradientBoost_Shallow"
+        ],
+        "weights": [
+          0.364,
+          0.338,
+          0.298
+        ],
+        "q80_err": 7.24,
+        "q90_err": 9.18
+      }
+    }
+  }
+}
